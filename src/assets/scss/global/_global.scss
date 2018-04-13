@@ -35,8 +35,9 @@ a {
   &:hover,
   &:active,
   &:focus {
-    color: blue;
-    opacity: .5;
+    color           : blue;
+    opacity         : .5;
+    text-decoration : none;
   }
 }
 
@@ -44,14 +45,19 @@ ul {
   list-style: none;
 }
 
-.work-container,
+p,
+a,
+span {
+  font-weight: lighter;
+}
+
 .home-container,
 .cv-container {
-  flex    : 1 1 100%;
+  // flex    : 1 1 100%;
   padding : 20px;
 
   @include breakpoint(xs-up) {
-    flex    : 0 0 75%;
+    // flex    : 0 0 75%;
     padding : 0px;
   }
 
@@ -73,7 +79,7 @@ ul {
     }
 
     .piece-info {
-      flex: 1 0 30%;
+      // flex: 1 0 30%;
       padding: 40px 0px;
     }
   }
@@ -106,5 +112,19 @@ ul {
   .inner {
     display: block;
     padding: 70px 5%;
+  }
+}
+
+.work-container {
+  // flex    : 1 1 100%;
+  padding : 20px;
+
+  @include breakpoint(xs-up) {
+    // flex    : 0 0 75%;
+    padding : 0px;
+  }
+
+  img {
+    width: 30%;
   }
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="work-container">
     <div v-for="(piece, index) in this.$store.state.pieces" :key="index" class="piece">
-      <img :src="require('./../../assets/images/' + piece.stuff.imgSrc)">
+      <img :src="require('./../../assets/images/' + piece.stuff.imgSrc[0])">
       <p>{{ piece.stuff.title }}</p>
     </div>
   </div>
@@ -12,6 +12,3 @@ export default {
   name: 'Index'
 }
 </script>
-
-<style lang="scss">
-</style>

@@ -167,7 +167,6 @@ export default {
       stuff: {
         title: 'Freestyle #1',
         imgSrc: [
-          '70_f-3.jpg',
           '70_f-3.jpg'
         ],
         series: 'freestylez'
@@ -184,113 +183,522 @@ export default {
       }
     },
     {
-      hiddenTitle: 'Ceiling-2',
-      link: 'ceiling-2',
+      hiddenTitle: 'Ceiling',
+      link: 'ceiling',
       type: 'photo',
       stuff: {
         title: 'Untitled',
-        imgSrc: ['66_ceiling-2-newer.jpg'],
+        imgSrc: [
+          '66_ceiling-2-newer.jpg',
+          '65_ceiling-1-newer.jpg'
+        ],
         series: 'freestylez'
       }
     },
     {
-      hiddenTitle: 'Ceiling-1',
-      link: 'ceiling-1',
+      hiddenTitle: 'Car-Flyer',
+      link: 'car-flyer',
+      type: 'photo',
+      stuff: {
+        title: 'Car Flyer',
+        imgSrc: ['62_flyer-car.jpg'],
+        series: 'freestylez'
+      }
+    },
+    {
+      hiddenTitle: 'Gold-Statue',
+      link: 'gold-statue',
       type: 'photo',
       stuff: {
         title: 'Untitled',
-        imgSrc: ['65_ceiling-1-newer.jpg'],
+        imgSrc: ['64_gold-statue-2.jpg'],
         series: 'freestylez'
       }
     },
     {
-      hiddenTitle: 'Car-Flyer',
-      link: 'car-flyer',
+      hiddenTitle: 'Fortaleza',
+      link: 'fortaleza',
       type: 'photo',
       stuff: {
-        title: 'Car Flyer',
-        imgSrc: ['62_flyer-car.jpg'],
+        title: 'Untitled',
+        imgSrc: ['63_fortaleza-4.jpg'],
         series: 'freestylez'
       }
     },
     {
-      hiddenTitle: 'Car-Flyer',
-      link: 'car-flyer',
+      hiddenTitle: 'Dino 8',
+      link: 'dino-8',
       type: 'photo',
       stuff: {
-        title: 'Car Flyer',
-        imgSrc: ['62_flyer-car.jpg'],
+        title: 'Untitled',
+        imgSrc: ['61_dino-8.jpg'],
+        series: 'foundation myths'
+      }
+    },
+    {
+      hiddenTitle: 'Dino 3',
+      link: 'dino-3',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['60_dino-3.jpg'],
+        series: 'foundation myths'
+      }
+    },
+    {
+      hiddenTitle: 'Chain',
+      link: 'chain',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['59_chain.jpg'],
         series: 'freestylez'
       }
     },
     {
-      hiddenTitle: 'Car-Flyer',
-      link: 'car-flyer',
+      hiddenTitle: 'Card',
+      link: 'card',
       type: 'photo',
       stuff: {
-        title: 'Car Flyer',
-        imgSrc: ['62_flyer-car.jpg'],
+        title: 'Untitled',
+        imgSrc: ['58_card.jpg'],
         series: 'freestylez'
       }
     },
     {
-      hiddenTitle: 'Car-Flyer',
-      link: 'car-flyer',
+      hiddenTitle: 'Card Piles',
+      link: 'card-piles',
       type: 'photo',
       stuff: {
-        title: 'Car Flyer',
-        imgSrc: ['62_flyer-car.jpg'],
+        title: 'Untitled',
+        imgSrc: ['57_card-piles.jpg'],
         series: 'freestylez'
       }
     },
     {
-      hiddenTitle: 'Car-Flyer',
-      link: 'car-flyer',
+      hiddenTitle: 'Boxes',
+      link: 'boxes',
       type: 'photo',
       stuff: {
-        title: 'Car Flyer',
-        imgSrc: ['62_flyer-car.jpg'],
+        title: 'Untitled',
+        imgSrc: ['56_boxes.jpg'],
         series: 'freestylez'
       }
     },
     {
-      hiddenTitle: 'Car-Flyer',
-      link: 'car-flyer',
+      hiddenTitle: 'Bar Code',
+      link: 'bar-code',
       type: 'photo',
       stuff: {
-        title: 'Car Flyer',
-        imgSrc: ['62_flyer-car.jpg'],
+        title: 'Bar Code',
+        imgSrc: ['55_bar-code.jpg'],
         series: 'freestylez'
       }
     },
     {
-      hiddenTitle: 'Car-Flyer',
-      link: 'car-flyer',
+      hiddenTitle: 'Ankle',
+      link: 'ankle',
       type: 'photo',
       stuff: {
-        title: 'Car Flyer',
-        imgSrc: ['62_flyer-car.jpg'],
+        title: 'Untitled',
+        imgSrc: ['54_ankle.jpg'],
         series: 'freestylez'
       }
     },
     {
-      hiddenTitle: 'Car-Flyer',
-      link: 'car-flyer',
+      hiddenTitle: 'Dino 5',
+      link: 'dino-5',
       type: 'photo',
       stuff: {
-        title: 'Car Flyer',
-        imgSrc: ['62_flyer-car.jpg'],
+        title: 'Untitled',
+        imgSrc: ['53_dino-5.jpg'],
+        series: 'foundation myths'
+      }
+    },
+    {
+      hiddenTitle: 'Dino 2',
+      link: 'dino-2',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['52_dino-2.jpg'],
+        series: 'foundation myths'
+      }
+    },
+    {
+      hiddenTitle: 'Dino 1',
+      link: 'dino-1',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['51_dino-1.jpg'],
+        series: 'foundation myths'
+      }
+    },
+    {
+      hiddenTitle: 'Leather',
+      link: 'leather',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['50_leather-1.jpg'],
         series: 'freestylez'
       }
     },
     {
-      hiddenTitle: 'Car-Flyer',
-      link: 'car-flyer',
+      hiddenTitle: 'Pink Rock',
+      link: 'pink-rock',
       type: 'photo',
       stuff: {
-        title: 'Car Flyer',
-        imgSrc: ['62_flyer-car.jpg'],
+        title: 'Pink Rock',
+        imgSrc: ['49_pink-rock.jpg'],
+        series: 'foundation myths'
+      }
+    },
+    {
+      hiddenTitle: 'Pulce',
+      link: 'pulce',
+      type: 'photo',
+      stuff: {
+        title: 'Pulce',
+        imgSrc: ['48_pulce.jpg'],
         series: 'freestylez'
+      }
+    },
+    {
+      hiddenTitle: 'Timestamp 3',
+      link: 'timestamp-3',
+      type: 'photo',
+      stuff: {
+        title: 'Timestamp 3',
+        imgSrc: ['47_timestamp-3.jpg'],
+        series: 'foundation myths'
+      }
+    },
+    {
+      hiddenTitle: 'Sticker',
+      link: 'sticker',
+      type: 'photo',
+      stuff: {
+        title: 'Sticker',
+        imgSrc: ['46_sticker.jpg'],
+        series: 'freestylez'
+      }
+    },
+    {
+      hiddenTitle: 'Sticker Book',
+      link: 'sticker-book',
+      type: 'photo',
+      stuff: {
+        title: 'Sticker Book',
+        imgSrc: ['45_sticker-book.jpg'],
+        series: 'foundation myths'
+      }
+    },
+    {
+      hiddenTitle: 'spray',
+      link: 'spray',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['44_spray-2.jpg'],
+        series: 'freestylez'
+      }
+    },
+    {
+      hiddenTitle: 'Mic',
+      link: 'mic',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['43_mic-1.jpg'],
+        series: 'freestylez'
+      }
+    },
+    {
+      hiddenTitle: 'Shoe Shrink',
+      link: 'shoe-shrink',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['42_shoe-shrink-1.jpg'],
+        series: 'freestylez'
+      }
+    },
+    {
+      hiddenTitle: 'Green Pole',
+      link: 'green-pole',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: [
+          '40_pole-1.jpg',
+          '40_pole-2.jpg'
+        ],
+        series: 'foundation myths'
+      }
+    },
+    {
+      hiddenTitle: 'Yellow Pole',
+      link: 'yellow-pole',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: [
+          '39_poles-3.jpg',
+          '39_poles-4.jpg'
+        ],
+        series: 'foundation myths'
+      }
+    },
+    {
+      hiddenTitle: 'Pages',
+      link: 'pages',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['38_pages.jpg'],
+        series: 'foundation myths'
+      }
+    },
+    {
+      hiddenTitle: 'Knuckles',
+      link: 'knuckles',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['34_knuckles-1.jpg'],
+        series: 'freestylez'
+      }
+    },
+    {
+      hiddenTitle: 'Flyer',
+      link: 'flyer',
+      type: 'photo',
+      stuff: {
+        title: 'Flyer',
+        imgSrc: ['33_flyer-2.jpg'],
+        series: 'freestylez'
+      }
+    },
+    {
+      hiddenTitle: 'Billenium',
+      link: 'billenium',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['31_billenium.jpg'],
+        series: 'foundation myths'
+      }
+    },
+    {
+      hiddenTitle: 'Fig 6',
+      link: 'fig-6',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['30_fig-6.jpg'],
+        series: 'freestylez'
+      }
+    },
+    {
+      hiddenTitle: 'Fig 5',
+      link: 'fig-5',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['29_fig-5.jpg'],
+        series: 'freestylez'
+      }
+    },
+    {
+      hiddenTitle: 'Fig 4',
+      link: 'fig-4',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['28_fig-4.jpg'],
+        series: 'freestylez'
+      }
+    },
+    {
+      hiddenTitle: 'Fig 3',
+      link: 'fig-3',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['27_fig-3.jpg'],
+        series: 'freestylez'
+      }
+    },
+    {
+      hiddenTitle: 'Green Rock',
+      link: 'green-rock',
+      type: 'photo',
+      stuff: {
+        title: 'Green Rock',
+        imgSrc: ['26_green-rock-3.jpg'],
+        series: 'foundation myths'
+      }
+    },
+    {
+      hiddenTitle: 'Jersey',
+      link: 'jersey',
+      type: 'photo',
+      stuff: {
+        title: 'Jerseys',
+        imgSrc: ['25_jersey-1.jpg'],
+        series: 'freestylez'
+      }
+    },
+    {
+      hiddenTitle: 'Yellow Rail',
+      link: 'yellow-rail',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['24_yellow-rail-1.jpg'],
+        series: 'foundation myths'
+      }
+    },
+    {
+      hiddenTitle: 'Jordan Ad 6',
+      link: 'jordan-ad-6',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['23_jordan-ad6-print.jpg'],
+        series: 'a little bit cooler'
+      }
+    },
+    {
+      hiddenTitle: 'Jordan Ad 5',
+      link: 'jordan-ad-5',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['22_jordan-ad5-print.jpg'],
+        series: 'a little bit cooler'
+      }
+    },
+    {
+      hiddenTitle: 'Jordan Ad 3',
+      link: 'jordan-ad-3',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['21_jordan-ad3-print.jpg'],
+        series: 'a little bit cooler'
+      }
+    },
+    {
+      hiddenTitle: 'Jordan Ad 1',
+      link: 'jordan-ad-1',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['20_jordan-ad1-print.jpg'],
+        series: 'a little bit cooler'
+      }
+    },
+    {
+      hiddenTitle: 'Jordan Ad 6',
+      link: 'jordan-ad-6',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['23_jordan-ad6-print.jpg'],
+        series: 'a little bit cooler'
+      }
+    },
+    {
+      hiddenTitle: 'True Blue 2',
+      link: 'true-blue-2',
+      type: 'photo',
+      stuff: {
+        title: 'True Blue #2',
+        imgSrc: ['18_j-3-2.jpg'],
+        series: 'a little bit cooler'
+      }
+    },
+    {
+      hiddenTitle: 'True Blue 1',
+      link: 'true-blue-1',
+      type: 'photo',
+      stuff: {
+        title: 'True Blue #1',
+        imgSrc: ['19_j-3.jpg'],
+        series: 'a little bit cooler'
+      }
+    },
+    {
+      hiddenTitle: 'Olympic 7 2',
+      link: 'olympic-7-2',
+      type: 'photo',
+      stuff: {
+        title: 'Olympic 7\'s #2',
+        imgSrc: ['17_j-7-2.jpg'],
+        series: 'a little bit cooler'
+      }
+    },
+    {
+      hiddenTitle: 'Olympic 7 1',
+      link: 'olympic-7-1',
+      type: 'photo',
+      stuff: {
+        title: 'Olympic 7\'s #1',
+        imgSrc: ['16_j-7.jpg'],
+        series: 'a little bit cooler'
+      }
+    },
+    {
+      hiddenTitle: 'Screenshot',
+      link: 'screenshot',
+      type: 'photo',
+      stuff: {
+        title: 'Screenshot',
+        imgSrc: ['15_screenshot-1-new.jpg'],
+        series: 'foundation myths'
+      }
+    },
+    {
+      hiddenTitle: 'Suggestion Partner 1',
+      link: 'suggestion-partner-1',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['10_suggestion-partner-1.jpg'],
+        series: 'freestylez'
+      }
+    },
+    {
+      hiddenTitle: 'Pseudorandom Landscape',
+      link: 'pseudorandom-landscape',
+      type: 'photo',
+      stuff: {
+        title: 'Pseudorandom Landscape',
+        imgSrc: [
+          '3_book-photo-1.jpg',
+          '4_book-photo-2.jpg',
+          '5_book-photo-3.jpg',
+          '6_book-photo-4.jpg',
+          '8_book-photo-5.jpg',
+          '9_book-photo-cover.jpg'
+        ],
+        series: 'pseudorandom landscape'
+      }
+    },
+    {
+      hiddenTitle: 'Rising Falling',
+      link: 'rising-falling',
+      type: 'photo',
+      stuff: {
+        title: 'Rising/Falling',
+        imgSrc: [
+          '1_rising-falling-photo.jpg',
+          '2_rising-falling-photo2.jpg'
+        ],
+        series: 'rising falling'
       }
     }
   ]

@@ -1,9 +1,11 @@
 <template>
-  <div class="work-container">
+  <div class="work-container col-12 col-md-9 offset-md-3">
     <div class="inner">
-      <div v-for="(piece, index) in this.theProject" :key="index" class="piece">
-        <img :src="require('./../../assets/images/' + piece.stuff.imgSrc)">
-        <p>{{ piece.stuff.title }}</p>
+      <div v-for="(piece, index) in this.theProject" class="project-piece" :key="index">
+        <div v-for="(photo, idx) in piece.stuff.imgSrc" class="piece" :key="idx">
+          <img :src="require('./../../assets/images/' + photo)">
+          <p>{{ piece.stuff.title }}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -27,5 +29,8 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+  .project-piece {
+    // border: 1px solid red;
+  }
 </style>

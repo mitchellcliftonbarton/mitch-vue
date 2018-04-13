@@ -1,7 +1,9 @@
 <template>
-  <div class="main-container">
-    <Nav></Nav>
-    <router-view></router-view>
+  <div class="main-container container-fluid">
+    <div class="row">
+      <Nav></Nav>
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -19,8 +21,8 @@ export default {
 <style lang="scss">
 
   .main-container {
-    display         : flex;
-    height          : 100%;
-    justify-content : flex-end;
+    // display         : flex;
+    // height          : 100%;
+    // justify-content : flex-end;
   }
 </style>

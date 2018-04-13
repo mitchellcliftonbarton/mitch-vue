@@ -41,10 +41,16 @@ export default {
           text: 'Year in Reverse, Humble Arts Foundation, <a target="_blank" href="http://hafny.org/group-show-55-year-in-reverse/">Online</a> - Curated by Jon Feinstein'
         },
         {
+          text: 'The Portrait Show, Provo, UT'
+        },
+        {
           text: 'Statewide Competition, Bountiful Davis Arts Center, Bountiful, UT - Curated by Peter Everett'
         },
         {
           text: 'Alternative Facts, Humble Arts Foundation, <a target="_blank" href="http://hafny.org/group-show-52-alternative-facts">Online</a>'
+        },
+        {
+          text: 'HUGE, Mestizo Gallery, Salt Lake City, UT'
         },
         {
           text: 'Black Sand White Sand Grey Sand, BANAL BANAL, <a target="_blank" href="http://banalbanal.org/bb0005.html">Online</a>'
@@ -118,6 +124,9 @@ export default {
     }
   ],
   publications: [
+    {
+      text: 'The Portrait Show, March 2004'
+    },
     {
       text: 'Love Letters, Published by BYU Camera Club'
     },

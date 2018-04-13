@@ -1,5 +1,5 @@
 <template>
-  <div class="cv-container">
+  <div class="cv-container col-12 col-md-9 offset-md-3">
     <div class="inner">
       <div class="personal-info">
         <p>{{ this.content.email }}</p>
@@ -86,7 +86,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   @import './../../assets/scss/mixins/mixins';
 
   .cv-container {

@@ -1,12 +1,12 @@
 <template>
-  <div class="work-container">
-    <div class="inner">
-      <div class="piece">
+  <div class="work-container col-12 col-md-9 offset-md-3">
+    <div class="inner row">
+      <div class="piece col-12 col-md-9">
         <div class="piece-inner">
           <img v-for="(img, index) in this.theImages" :src="img" :key="index">
         </div>
       </div>
-      <div class="piece-info">
+      <div class="piece-info col-12 col-md-3">
         <p>{{ this.thePiece.stuff.title }}</p>
       </div>
     </div>
@@ -41,5 +41,10 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+  .piece-info {
+    p {
+      // color: gray;
+    }
+  }
 </style>

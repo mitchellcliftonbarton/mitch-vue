@@ -1,85 +1,64 @@
 <template>
-  <nav class="nav" :class="{ 'open': isOpen }">
+  <nav class="nav col-12 col-md-3 p-0" :class="{ 'open': isOpen }">
     <a v-if="this.$store.state.isMobile" class="menu-button" href="#" @click.prevent="open()">+</a>
     <div class="nav-inner">
 
-      <ul class="index-button" v-if="!this.$store.state.isMobile">
-        <li ref="indexLink">
-          <a href="#" @click.prevent="indexSwitch()" v-bind:key="this.$store.state.indexView">
-            {{ this.$store.state.indexView ? '---' : '==='}}
-          </a>
-        </li>
-      </ul>
+      <IndexButton v-if="!this.$store.state.isMobile"></IndexButton>
 
       <ul class="head-links">
-        <li><router-link class="dir" @click.native="close()" to="/" exact>Mitchell Barton</router-link></li>
-        <li><router-link class="dir" @click.native="close()" :to="{ name: 'info' }">Info</router-link></li>
+        <li ref="nameLink">
+          <router-link
+            class="dir"
+            @click.native="close()"
+            to="/"
+            exact
+          >
+          Mitchell Barton
+          </router-link>
+        </li>
+        <li>
+          <router-link
+            class="dir"
+            @click.native="close()"
+            :to="{ name: 'info' }"
+          >
+          Info
+          </router-link>
+        </li>
       </ul>
 
-      <ul class="crumbs" v-if="this.$store.state.indexView && !this.$store.state.isMobile">
-        <li v-if="this.$store.state.projCrumb" class="oppCurrent">
-          <router-link :to="this.$route.path" class="dir">Project - {{ _.startCase(this.$route.params.project) }}</router-link>
-        </li>
-        <li v-else class="oppCurrent hidden">
-          <a href="#">-</a>
-        </li>
-      </ul>
+      <Crumbs v-if="!this.$store.state.isMobile" :view="this.$store.state.indexView ? this.crumbIndexData : this.crumbProjectData"></Crumbs>
 
-      <ul class="crumbs" v-else-if="!this.$store.state.indexView && !this.$store.state.isMobile">
-        <li v-if="this.$store.state.indexCrumb" class="oppCurrent">
-          <router-link :to="this.$route.path" class="dir">Index - {{ this.$route.name === 'info' || this.$route.name === 'home' ? '' : pieceLink.stuff.title }}</router-link>
-        </li>
-        <li v-else class="oppCurrent hidden">
-          <a href="#">-</a>
-        </li>
-      </ul>
+      <WorkLinks
+        v-if="!this.$store.state.isMobile"
+        ref="workLinks"
+        :style="{ maxHeight: `${this.navMaxHeight}px` }"
+        :work="this.$store.state.indexView ? this.$store.state.pieces : this.$store.state.series"
+      ></WorkLinks>
 
-      <ul ref="workLinks" class="work-links" :style="{ maxHeight: `${this.navMaxHeight}px` }">
-        <!-- Links for Index View Desktop -->
-        <div v-if="this.$store.state.indexView && !this.$store.state.isMobile" class="work-inner-links">
-          <li v-for="(piece, index) in this.$store.state.pieces" :key="index">
-            <router-link class="dir work-link" :to="{ path: '/work/' + piece.link }" :data-num="index">{{ piece.stuff.title }}</router-link>
-          </li>
-        </div>
-
-        <!-- Links for Project View Desktop -->
-        <div v-else-if="!this.$store.state.indexView && !this.$store.state.isMobile" class="work-inner-links">
-          <li v-for="(project, index) in this.$store.state.series" :key="index">
-            <router-link
-              :to="{ path: '/project/' + project[0].stuff.series }"
-              class="dir work-link"
-              :data-num="index"
-            >
-              {{ _.startCase(project[0].stuff.series) }}
-            </router-link>
-          </li>
-        </div>
-
-        <!-- Links for Mobile -->
-        <div v-else-if="this.$store.state.isMobile" class="work-inner-links">
-          <li class="oppCurrent">
-            <router-link to="/work/index" @click.native="close()">Index</router-link>
-          </li>
-          <li v-for="(project, index) in this.$store.state.series" :key="index">
-            <router-link
-              :to="{ path: '/project/' + project[0].stuff.series }"
-              class="dir"
-              @click.native="close()"
-            >
-              {{ _.startCase(project[0].stuff.series) }}
-            </router-link>
-          </li>
-        </div>
-      </ul>
+      <WorkLinks
+        v-else
+        ref="workLinks"
+        :work="this.$store.state.series"
+      ></WorkLinks>
     </div>
   </nav>
 </template>
 
 <script>
 import _ from 'lodash'
+import IndexButton from './navigation/IndexButton'
+import Crumbs from './navigation/Crumbs'
+import WorkLinks from './navigation/WorkLinks'
+import { bus } from './../../consts.js'
 
 export default {
   name: 'Nav',
+  components: {
+    IndexButton,
+    Crumbs,
+    WorkLinks
+  },
   data () {
     return {
       isOpen: false,
@@ -92,19 +71,41 @@ export default {
     }
   },
   computed: {
-    _ () {
-      return _
+    crumbIndexData () {
+      return `Project - ${_.startCase(this.$route.params.project)}`
+    },
+    crumbProjectData () {
+      if (this.pieceLink) {
+        return `Index - ${this.$route.name === 'info' || this.$route.name === 'home' ? '' : this.pieceLink.stuff.title}`
+      } else {
+        return false
+      }
     },
     pieceLink () {
-      return this.$store.state.pieces.find((e) => {
-        return e.link === this.$route.params.piece
-      })
+      if (!this.$store.state.indexView) {
+        return this.$store.state.pieces.find((e) => {
+          return e.link === this.$route.params.piece
+        })
+      } else {
+        return false
+      }
     },
     visibleLinks () {
       return Math.floor(this.navHeight / this.linkHeight)
     },
     navMaxHeight () {
       return this.visibleLinks * this.linkHeight
+    },
+    navOverflow () {
+      return this.currentPage > this.visibleLinks
+    },
+    navPosition () {
+      if (this.navOverflow) {
+        let x = (this.currentPage - this.visibleLinks) * this.linkHeight
+        return x
+      } else {
+        return false
+      }
     }
   },
   methods: {
@@ -121,62 +122,47 @@ export default {
         return false
       }
     },
-    indexSwitch () {
-      if (this.$store.state.indexView) {
-        this.$store.dispatch('setIndexView', false)
-
-        if (this.$route.name !== 'home' || this.$route.name !== 'info') {
-          this.$store.state.projCrumb ? console.log('yup') : this.$store.dispatch('setIndexCrumb', true)
-          this.$store.dispatch('setProjCrumb', false)
-        }
-      } else {
-        // set to index
-        this.$store.dispatch('setIndexView', true)
-
-        if (this.$route.name === 'home' || this.$route.name === 'info') {
-          console.log('not a proj or piece')
-        } else {
-          console.log('yes a proj or piece')
-          this.$store.state.indexCrumb ? console.log('yup') : this.$store.dispatch('setProjCrumb', true)
-          this.$store.dispatch('setIndexCrumb', false)
-        }
-      }
-    },
     arrowRoute (num, event) {
       // this.currentLinks = [...document.querySelectorAll('.dir')]
-      this.currentPage = this.currentLinks.findIndex(this.checkCurrent)
-      this.currentWorkPage = this.currentWorkLinks.findIndex(this.checkCurrent)
-      let nextHref
-
-      switch (num) {
-        case 38: // up
-          event.preventDefault()
-          nextHref = this.currentLinks[this.currentPage - 1].getAttribute('href')
-          nextHref = _.trimStart(nextHref, '#')
-          this.$router.push({ path: nextHref })
-          break
-        case 40: // down
-          event.preventDefault()
-          nextHref = this.currentLinks[this.currentPage + 1].getAttribute('href')
-          nextHref = _.trimStart(nextHref, '#')
-          this.$router.push({ path: nextHref })
-          break
-        default:
-      }
+      // this.currentPage = this.currentLinks.findIndex(this.checkCurrent)
+      // this.currentWorkPage = this.currentWorkLinks.findIndex(this.checkCurrent)
+      // let nextHref
+      //
+      // switch (num) {
+      //   case 38: // up
+      //     event.preventDefault()
+      //     console.log('going up')
+      //     nextHref = this.currentLinks[this.currentPage - 1].getAttribute('href')
+      //     nextHref = _.trimStart(nextHref, '#')
+      //     this.$router.push({ path: nextHref })
+      //     break
+      //   case 40: // down
+      //     event.preventDefault()
+      //     console.log('going down')
+      //     nextHref = this.currentLinks[this.currentPage + 1].getAttribute('href')
+      //     nextHref = _.trimStart(nextHref, '#')
+      //     this.$router.push({ path: nextHref })
+      //     break
+      //   default:
+      // }
     }
   },
   mounted () {
     window.addEventListener('keydown', (e) => {
-      this.arrowRoute(e.which, e)
+      // this.arrowRoute(e.which, e)
     })
 
-    this.navHeight = this.$refs.workLinks.offsetHeight
-    this.linkHeight = this.$refs.indexLink.offsetHeight
+    bus.$on('closingMenu', () => {
+      this.close()
+    })
 
-    this.currentLinks = [...document.querySelectorAll('.dir')]
-    this.currentPage = this.currentLinks.findIndex(this.checkCurrent)
-    this.currentWorkLinks = [...document.querySelectorAll('.dir.work-link')]
-    this.currentWorkPage = this.currentWorkLinks.findIndex(this.checkCurrent)
+    // this.navHeight = this.$refs.workLinks.$el.offsetHeight
+    // this.linkHeight = this.$refs.nameLink.offsetHeight
+    //
+    // this.currentLinks = [...document.querySelectorAll('.dir')]
+    // this.currentPage = this.currentLinks.findIndex(this.checkCurrent)
+    // this.currentWorkLinks = [...document.querySelectorAll('.dir.work-link')]
+    // this.currentWorkPage = this.currentWorkLinks.findIndex(this.checkCurrent)
   }
 }
 </script>
@@ -193,7 +179,7 @@ export default {
     pointer-events: none;
 
     @include breakpoint(xs-up) {
-      width          : 25vw;
+      // width          : 25vw;
       border-right   : 1px solid #efefef;
       pointer-events : auto;
     }
@@ -251,11 +237,21 @@ export default {
       }
 
       .work-links {
-        // padding       : 10px 0px;
-        overflow      : hidden;
+        overflow-x    : hidden;
+        overflow-y    : auto;
         position      : relative;
         border-top    : 1px solid #efefef;
         border-bottom : 1px solid #efefef;
+
+        &:after {
+          content: '';
+          position: fixed;
+          width: 100%;
+          bottom: 0px;
+          background: linear-gradient(#ffffff00, white);
+          height: 100px;
+          pointer-events: none;
+        }
       }
 
       a.router-link-active {
