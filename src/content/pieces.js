@@ -7,7 +7,8 @@ export default {
       stuff: {
         title: 'Dossier #12',
         imgSrc: ['84_dossier-12.jpg'],
-        series: 'dossiers'
+        series: 'dossiers',
+        date: '2018'
       }
     },
     {
@@ -17,7 +18,8 @@ export default {
       stuff: {
         title: 'Dossier #11',
         imgSrc: ['83_dossier-11.jpg'],
-        series: 'dossiers'
+        series: 'dossiers',
+        date: '2018'
       }
     },
     {
@@ -27,7 +29,8 @@ export default {
       stuff: {
         title: 'Dossier #10',
         imgSrc: ['82_dossier-10.jpg'],
-        series: 'dossiers'
+        series: 'dossiers',
+        date: '2018'
       }
     },
     {
@@ -37,7 +40,8 @@ export default {
       stuff: {
         title: 'Dossier #9',
         imgSrc: ['81_dossier-9.jpg'],
-        series: 'dossiers'
+        series: 'dossiers',
+        date: '2018'
       }
     },
     {
@@ -47,7 +51,8 @@ export default {
       stuff: {
         title: 'Dossier #8',
         imgSrc: ['80_dossier-8.jpg'],
-        series: 'dossiers'
+        series: 'dossiers',
+        date: '2018'
       }
     },
     {
@@ -57,7 +62,8 @@ export default {
       stuff: {
         title: 'Dossier #7',
         imgSrc: ['79_dossier-7.jpg'],
-        series: 'dossiers'
+        series: 'dossiers',
+        date: '2018'
       }
     },
     {
@@ -67,7 +73,8 @@ export default {
       stuff: {
         title: 'Dossier #6',
         imgSrc: ['78_dossier-6.jpg'],
-        series: 'dossiers'
+        series: 'dossiers',
+        date: '2018'
       }
     },
     {
@@ -77,7 +84,8 @@ export default {
       stuff: {
         title: 'Dossier #5',
         imgSrc: ['77_dossier-5.jpg'],
-        series: 'dossiers'
+        series: 'dossiers',
+        date: '2018'
       }
     },
     {
@@ -87,7 +95,8 @@ export default {
       stuff: {
         title: 'Dossier #4',
         imgSrc: ['76_dossier-4.jpg'],
-        series: 'dossiers'
+        series: 'dossiers',
+        date: '2018'
       }
     },
     {
@@ -97,7 +106,8 @@ export default {
       stuff: {
         title: 'Dossier #3',
         imgSrc: ['75_dossier-3.jpg'],
-        series: 'dossiers'
+        series: 'dossiers',
+        date: '2018'
       }
     },
     {
@@ -107,7 +117,8 @@ export default {
       stuff: {
         title: 'Dossier #2',
         imgSrc: ['74_dossier-2.jpg'],
-        series: 'dossiers'
+        series: 'dossiers',
+        date: '2018'
       }
     },
     {
@@ -117,7 +128,8 @@ export default {
       stuff: {
         title: 'Dossier #1',
         imgSrc: ['73_dossier-1.jpg'],
-        series: 'dossiers'
+        series: 'dossiers',
+        date: '2018'
       }
     },
     {
@@ -127,7 +139,8 @@ export default {
       stuff: {
         title: 'Freestyle #5',
         imgSrc: ['72_f-5.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2017'
       }
     },
     {
@@ -137,7 +150,8 @@ export default {
       stuff: {
         title: 'Freestyle #4',
         imgSrc: ['69_f-2.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2017'
       }
     },
     {
@@ -147,7 +161,8 @@ export default {
       stuff: {
         title: 'Freestyle #3',
         imgSrc: ['68_f-1.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2017'
       }
     },
     {
@@ -157,7 +172,8 @@ export default {
       stuff: {
         title: 'Freestyle #2',
         imgSrc: ['71_f-4.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2017'
       }
     },
     {
@@ -169,7 +185,8 @@ export default {
         imgSrc: [
           '70_f-3.jpg'
         ],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2017'
       }
     },
     {
@@ -179,7 +196,8 @@ export default {
       stuff: {
         title: 'Column',
         imgSrc: ['67_column-3.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2017'
       }
     },
     {
@@ -192,7 +210,8 @@ export default {
           '66_ceiling-2-newer.jpg',
           '65_ceiling-1-newer.jpg'
         ],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2017'
       }
     },
     {
@@ -202,7 +221,8 @@ export default {
       stuff: {
         title: 'Car Flyer',
         imgSrc: ['62_flyer-car.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2017'
       }
     },
     {
@@ -212,7 +232,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['64_gold-statue-2.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2017'
       }
     },
     {
@@ -222,7 +243,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['63_fortaleza-4.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2017'
       }
     },
     {
@@ -232,7 +254,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['61_dino-8.jpg'],
-        series: 'foundation myths'
+        series: 'foundation myths',
+        date: '2017'
       }
     },
     {
@@ -242,7 +265,30 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['60_dino-3.jpg'],
-        series: 'foundation myths'
+        series: 'foundation myths',
+        date: '2017'
+      }
+    },
+    {
+      hiddenTitle: 'Monument 8',
+      link: 'monument-8',
+      type: 'video',
+      stuff: {
+        title: 'Monument Feed #8',
+        imgSrc: ['monument-8-2-new.mp4'],
+        series: 'foundation myths',
+        date: '2017'
+      }
+    },
+    {
+      hiddenTitle: 'Saliva',
+      link: 'saliva',
+      type: 'audio',
+      stuff: {
+        title: 'Saliva',
+        imgSrc: ['saliva.mp3'],
+        series: 'foundation myths',
+        date: '2017'
       }
     },
     {
@@ -252,7 +298,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['59_chain.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2016'
       }
     },
     {
@@ -262,7 +309,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['58_card.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2016'
       }
     },
     {
@@ -272,7 +320,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['57_card-piles.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2017'
       }
     },
     {
@@ -282,7 +331,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['56_boxes.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2016'
       }
     },
     {
@@ -292,7 +342,8 @@ export default {
       stuff: {
         title: 'Bar Code',
         imgSrc: ['55_bar-code.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2017'
       }
     },
     {
@@ -302,7 +353,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['54_ankle.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2017'
       }
     },
     {
@@ -312,7 +364,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['53_dino-5.jpg'],
-        series: 'foundation myths'
+        series: 'foundation myths',
+        date: '2017'
       }
     },
     {
@@ -322,7 +375,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['52_dino-2.jpg'],
-        series: 'foundation myths'
+        series: 'foundation myths',
+        date: '2017'
       }
     },
     {
@@ -332,7 +386,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['51_dino-1.jpg'],
-        series: 'foundation myths'
+        series: 'foundation myths',
+        date: '2017'
       }
     },
     {
@@ -342,7 +397,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['50_leather-1.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2017'
       }
     },
     {
@@ -352,7 +408,8 @@ export default {
       stuff: {
         title: 'Pink Rock',
         imgSrc: ['49_pink-rock.jpg'],
-        series: 'foundation myths'
+        series: 'foundation myths',
+        date: '2017'
       }
     },
     {
@@ -362,7 +419,8 @@ export default {
       stuff: {
         title: 'Pulce',
         imgSrc: ['48_pulce.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2017'
       }
     },
     {
@@ -372,7 +430,8 @@ export default {
       stuff: {
         title: 'Timestamp 3',
         imgSrc: ['47_timestamp-3.jpg'],
-        series: 'foundation myths'
+        series: 'foundation myths',
+        date: '2017'
       }
     },
     {
@@ -382,7 +441,8 @@ export default {
       stuff: {
         title: 'Sticker',
         imgSrc: ['46_sticker.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2017'
       }
     },
     {
@@ -392,7 +452,8 @@ export default {
       stuff: {
         title: 'Sticker Book',
         imgSrc: ['45_sticker-book.jpg'],
-        series: 'foundation myths'
+        series: 'foundation myths',
+        date: '2016'
       }
     },
     {
@@ -402,7 +463,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['44_spray-2.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2017'
       }
     },
     {
@@ -412,7 +474,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['43_mic-1.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2017'
       }
     },
     {
@@ -422,7 +485,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['42_shoe-shrink-1.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2017'
       }
     },
     {
@@ -435,7 +499,8 @@ export default {
           '40_pole-1.jpg',
           '40_pole-2.jpg'
         ],
-        series: 'foundation myths'
+        series: 'foundation myths',
+        date: '2016'
       }
     },
     {
@@ -448,7 +513,8 @@ export default {
           '39_poles-3.jpg',
           '39_poles-4.jpg'
         ],
-        series: 'foundation myths'
+        series: 'foundation myths',
+        date: '2016'
       }
     },
     {
@@ -458,7 +524,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['38_pages.jpg'],
-        series: 'foundation myths'
+        series: 'foundation myths',
+        date: '2016'
       }
     },
     {
@@ -468,7 +535,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['34_knuckles-1.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2016'
       }
     },
     {
@@ -478,7 +546,8 @@ export default {
       stuff: {
         title: 'Flyer',
         imgSrc: ['33_flyer-2.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2016'
       }
     },
     {
@@ -488,7 +557,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['31_billenium.jpg'],
-        series: 'foundation myths'
+        series: 'foundation myths',
+        date: '2016'
       }
     },
     {
@@ -498,7 +568,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['30_fig-6.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2016'
       }
     },
     {
@@ -508,7 +579,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['29_fig-5.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2016'
       }
     },
     {
@@ -518,7 +590,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['28_fig-4.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2016'
       }
     },
     {
@@ -528,7 +601,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['27_fig-3.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2016'
       }
     },
     {
@@ -538,7 +612,8 @@ export default {
       stuff: {
         title: 'Green Rock',
         imgSrc: ['26_green-rock-3.jpg'],
-        series: 'foundation myths'
+        series: 'foundation myths',
+        date: '2017'
       }
     },
     {
@@ -548,7 +623,8 @@ export default {
       stuff: {
         title: 'Jerseys',
         imgSrc: ['25_jersey-1.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2016'
       }
     },
     {
@@ -558,7 +634,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['24_yellow-rail-1.jpg'],
-        series: 'foundation myths'
+        series: 'foundation myths',
+        date: '2016'
       }
     },
     {
@@ -568,7 +645,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['23_jordan-ad6-print.jpg'],
-        series: 'a little bit cooler'
+        series: 'a little bit cooler',
+        date: '2015'
       }
     },
     {
@@ -578,7 +656,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['22_jordan-ad5-print.jpg'],
-        series: 'a little bit cooler'
+        series: 'a little bit cooler',
+        date: '2015'
       }
     },
     {
@@ -588,7 +667,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['21_jordan-ad3-print.jpg'],
-        series: 'a little bit cooler'
+        series: 'a little bit cooler',
+        date: '2015'
       }
     },
     {
@@ -598,17 +678,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['20_jordan-ad1-print.jpg'],
-        series: 'a little bit cooler'
-      }
-    },
-    {
-      hiddenTitle: 'Jordan Ad 6',
-      link: 'jordan-ad-6',
-      type: 'photo',
-      stuff: {
-        title: 'Untitled',
-        imgSrc: ['23_jordan-ad6-print.jpg'],
-        series: 'a little bit cooler'
+        series: 'a little bit cooler',
+        date: '2015'
       }
     },
     {
@@ -618,7 +689,8 @@ export default {
       stuff: {
         title: 'True Blue #2',
         imgSrc: ['18_j-3-2.jpg'],
-        series: 'a little bit cooler'
+        series: 'a little bit cooler',
+        date: '2015'
       }
     },
     {
@@ -628,7 +700,8 @@ export default {
       stuff: {
         title: 'True Blue #1',
         imgSrc: ['19_j-3.jpg'],
-        series: 'a little bit cooler'
+        series: 'a little bit cooler',
+        date: '2015'
       }
     },
     {
@@ -638,7 +711,8 @@ export default {
       stuff: {
         title: 'Olympic 7\'s #2',
         imgSrc: ['17_j-7-2.jpg'],
-        series: 'a little bit cooler'
+        series: 'a little bit cooler',
+        date: '2015'
       }
     },
     {
@@ -648,7 +722,8 @@ export default {
       stuff: {
         title: 'Olympic 7\'s #1',
         imgSrc: ['16_j-7.jpg'],
-        series: 'a little bit cooler'
+        series: 'a little bit cooler',
+        date: '2015'
       }
     },
     {
@@ -658,7 +733,8 @@ export default {
       stuff: {
         title: 'Screenshot',
         imgSrc: ['15_screenshot-1-new.jpg'],
-        series: 'foundation myths'
+        series: 'foundation myths',
+        date: '2015'
       }
     },
     {
@@ -668,7 +744,8 @@ export default {
       stuff: {
         title: 'Untitled',
         imgSrc: ['10_suggestion-partner-1.jpg'],
-        series: 'freestylez'
+        series: 'freestylez',
+        date: '2015'
       }
     },
     {
@@ -685,20 +762,22 @@ export default {
           '8_book-photo-5.jpg',
           '9_book-photo-cover.jpg'
         ],
-        series: 'pseudorandom landscape'
+        series: 'pseudorandom landscape',
+        date: '2015'
       }
     },
     {
-      hiddenTitle: 'Rising Falling',
-      link: 'rising-falling',
+      hiddenTitle: 'Rising Falling Installation',
+      link: 'rising-falling-installation',
       type: 'photo',
       stuff: {
-        title: 'Rising/Falling',
+        title: 'Rising/Falling (Installation Shot)',
         imgSrc: [
           '1_rising-falling-photo.jpg',
           '2_rising-falling-photo2.jpg'
         ],
-        series: 'rising falling'
+        series: 'rising falling',
+        date: '2015'
       }
     }
   ]

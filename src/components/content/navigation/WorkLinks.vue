@@ -9,7 +9,7 @@
         <router-link
           class="dir"
           :class="{ 'work-link': !$store.state.isMobile }"
-          :to="!Array.isArray(piece) ? `/work/${piece.link}` : `/project/${piece[0].stuff.series}`"
+          :to="!Array.isArray(piece) ? `/work/${piece.link}` : `/project/${piece[0].stuff.series.replace(/\s+/g, '-').toLowerCase()}`"
           :data-num="index"
           @click.native="closeMenu()"
         >

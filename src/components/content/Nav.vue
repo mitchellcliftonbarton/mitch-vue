@@ -223,7 +223,6 @@ export default {
 
       @include breakpoint(xs-up) {
         display        : flex;
-        width          : auto;
         flex-direction : column;
         padding        : 30px;
         box-sizing     : border-box;
