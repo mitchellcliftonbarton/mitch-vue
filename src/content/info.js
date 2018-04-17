@@ -2,7 +2,7 @@ export default {
   name: 'Mitchell Barton',
   email: 'mitchellcliftonbarton@gmail.com',
   instagram: 'https://www.instagram.com/mitchellcliftonbarton/',
-  about: 'Contact me if you feel like it! I make art, but I also design and make websites and am fluent in HTML, CSS, Javascript, and Spanish. I also make things working with Node.js, Wordpress, Python, PHP, GSAP, Ember, React, and Vue.js. If you have a project you want to work on or want to request a resume/examples of design/web work, don\'t hesitate to email. I currently work at <a href="http://www.welikesmall.com/" target="_blank">Welikesmall.</a>',
+  about: 'Contact me if you feel like it! I like making new friends, so if you have a question or just want to chat, send me an email! I make art, but I also design and make websites and am fluent in HTML, CSS, Javascript, and Spanish. I also make things working with Node.js, Wordpress, Python, PHP, Ember, React, and Vue.js. If you have a project you want to work on or want to request a resume/examples of design/web work, don\'t hesitate to contact me. I currently work at <a href="http://www.welikesmall.com/" target="_blank">Welikesmall.</a>',
   education: {
     year: '2017',
     text: 'BFA Studio Art, Brigham Young University, Provo UT'
