@@ -2,61 +2,55 @@
   <div class="work-container col-12 col-md-9 offset-md-3">
     <div class="inner pt-5">
       <div v-for="(piece, index) in this.theProject" class="m-0" :key="index">
-        <div v-if="piece.type === 'photo'" class="row">
-          <div class="piece col-12 col-md-9 d-flex flex-column justify-content-center align-items-center">
-            <img v-for="(img, idx) in piece.stuff.imgSrc" :src="require('./../../assets/images/' + img)" :key="idx" class="pb-5">
-          </div>
-          <div class="piece-info col-12 col-md-3">
-            <p>{{ piece.stuff.title }}</p>
-            <p>{{ piece.stuff.date }}</p>
-          </div>
-        </div>
+        <ImageSec v-if="piece.type === 'photo'" :piece="piece" :images="piece.stuff.imgSrc" :num="index" v-on:switch-large="switchLarge"></ImageSec>
 
-        <div v-else-if="piece.type === 'video'" class="row">
-          <div class="piece col-12 col-md-9 d-flex flex-column justify-content-center align-items-center">
-            <video
-              :src="require(`./../../assets/videos/${piece.stuff.imgSrc}`)"
-              width="560"
-              height="315"
-              controls
-              class="mb-5"
-            >
-            </video>
-          </div>
-          <div class="piece-info col-12 col-md-3">
-            <p>{{ piece.stuff.title }}</p>
-            <p>{{ piece.stuff.date }}</p>
-          </div>
-        </div>
+        <VideoSec v-else-if="piece.type === 'video'" :piece="piece" :data-num="index"></VideoSec>
 
-        <div v-else-if="piece.type === 'audio'" class="row">
-          <div class="piece col-12 col-md-9 d-flex flex-column justify-content-center align-items-center">
-            <video
-              :src="require(`./../../assets/audio/${piece.stuff.imgSrc}`)"
-              controls
-              class="mb-5"
-            >
-            </video>
-          </div>
-          <div class="piece-info col-12 col-md-3">
-            <p>{{ piece.stuff.title }}</p>
-            <p>{{ piece.stuff.date }}</p>
-          </div>
-        </div>
+        <AudioSec v-else-if="piece.type === 'audio'" :piece="piece" :data-num="index"></AudioSec>
       </div>
     </div>
+
+    <LargeView
+      v-if="zoomed"
+      :class="{ active: zoomed }"
+      :image="require('@/assets/images/' + this.theProject[this.currentZoomed].stuff.imgSrc[0])"
+      v-on:switch-large="switchLarge"
+    ></LargeView>
   </div>
 </template>
 
 <script>
+import ImageSec from './media/ImageSec'
+import VideoSec from './media/VideoSec'
+import AudioSec from './media/AudioSec'
+import LargeView from './LargeView'
+
 export default {
   name: 'Project',
+  components: {
+    VideoSec,
+    AudioSec,
+    ImageSec,
+    LargeView
+  },
+  data () {
+    return {
+      zoomed: false,
+      currentZoomed: 0
+    }
+  },
   computed: {
     projectName () {
       return this.$route.params.project.replace(/-/g, ' ')
     },
     theProject () {
       return this.$store.state.series[this.projectName]
+    }
+  },
+  methods: {
+    switchLarge (x) {
+      if (x) this.currentZoomed = x.target.dataset.num
+      this.zoomed ? this.zoomed = false : this.zoomed = true
     }
   },
   beforeRouteLeave (to, from, next) {
@@ -67,7 +61,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .project-piece {
-    // border: 1px solid red;
-  }
 </style>

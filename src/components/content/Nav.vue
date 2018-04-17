@@ -213,6 +213,17 @@ export default {
       width      : 100%;
       height     : 100%;
 
+      &:after {
+        content        : '';
+        position       : absolute;
+        width          : 100%;
+        bottom         : 0px;
+        background     : linear-gradient(#ffffff00, white);
+        height         : 100px;
+        pointer-events : none;
+        left           : 0px;
+      }
+
       ul {
         margin-bottom: 20px;
 
@@ -241,16 +252,6 @@ export default {
         position      : relative;
         border-top    : 1px solid #efefef;
         border-bottom : 1px solid #efefef;
-
-        &:after {
-          content: '';
-          position: fixed;
-          width: 100%;
-          bottom: 0px;
-          background: linear-gradient(#ffffff00, white);
-          height: 100px;
-          pointer-events: none;
-        }
       }
 
       a.router-link-active {

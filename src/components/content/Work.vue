@@ -1,70 +1,64 @@
 <template>
   <div class="work-container col-12 col-md-9 offset-md-3">
-    <div v-if="this.thePiece.type === 'photo'" class="inner row m-0 pt-5">
-      <div class="piece col-12 col-md-9 d-flex flex-column justify-content-center align-items-center">
-        <img v-for="(img, index) in this.theImages" :src="img" :key="index" class="pb-5">
-      </div>
-      <div class="piece-info col-12 col-md-3">
-        <p>{{ this.thePiece.stuff.title }}</p>
-        <p>{{ this.thePiece.stuff.date }}</p>
-      </div>
-    </div>
+    <ImageSec
+      v-if="this.thePiece.type === 'photo'"
+      class="m-0 pt-5 inner"
+      :piece="this.thePiece"
+      :images="this.thePiece.stuff.imgSrc"
+      v-on:switch-large="switchLarge()"
+    ></ImageSec>
 
-    <div v-else-if="this.thePiece.type === 'video'" class="inner row m-0 pt-5">
-      <div class="piece col-12 col-md-9 d-flex flex-column justify-content-center align-items-center">
-        <video
-          :src="require(`./../../assets/videos/${this.thePiece.stuff.imgSrc}`)"
-          width="560"
-          height="315"
-          controls
-        >
-        </video>
-      </div>
-      <div class="piece-info col-12 col-md-3">
-        <p>{{ this.thePiece.stuff.title }}</p>
-        <p>{{ this.thePiece.stuff.date }}</p>
-      </div>
-    </div>
+    <VideoSec
+      v-else-if="this.thePiece.type === 'video'"
+      :piece="this.thePiece"
+      class="inner m-0 pt-5"
+    >
+    </VideoSec>
 
-    <div v-else-if="this.thePiece.type === 'audio'" class="inner row m-0 pt-5">
-      <div class="piece col-12 col-md-9 d-flex flex-column justify-content-center align-items-center">
-        <audio
-          :src="require(`./../../assets/audio/${this.thePiece.stuff.imgSrc}`)"
-          controls
-        >
-      </audio>
-      </div>
-      <div class="piece-info col-12 col-md-3">
-        <p>{{ this.thePiece.stuff.title }}</p>
-        <p>{{ this.thePiece.stuff.date }}</p>
-      </div>
-    </div>
+    <AudioSec
+      v-else-if="this.thePiece.type === 'audio'"
+      :piece="this.thePiece"
+      class="inner m-0 pt-5"
+    ></AudioSec>
+
+    <LargeView
+      v-if="zoomed"
+      :class="{ active: zoomed }"
+      :image="require('@/assets/images/' + this.thePiece.stuff.imgSrc[0])"
+      v-on:switch-large="switchLarge()"
+    ></LargeView>
   </div>
 </template>
 
 <script>
+import ImageSec from './media/ImageSec'
+import VideoSec from './media/VideoSec'
+import AudioSec from './media/AudioSec'
+import LargeView from './LargeView'
+
 export default {
   name: 'Work',
+  components: {
+    VideoSec,
+    AudioSec,
+    LargeView,
+    ImageSec
+  },
+  data () {
+    return {
+      zoomed: false
+    }
+  },
   computed: {
     thePiece () {
       return this.$store.state.pieces.find((e) => {
         return e.link === this.$route.params.piece
       })
-    },
-    theImages () {
-      if (this.thePiece.type === 'video') {
-        return false
-      } else {
-        let images = []
-
-        this.thePiece.stuff.imgSrc.forEach((x) => {
-          let img = require('./../../assets/images/' + x)
-
-          images.push(img)
-        })
-
-        return images
-      }
+    }
+  },
+  methods: {
+    switchLarge () {
+      this.zoomed ? this.zoomed = false : this.zoomed = true
     }
   },
   beforeRouteLeave (to, from, next) {
@@ -75,9 +69,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .piece-info {
-    p {
-      // color: gray;
-    }
-  }
 </style>

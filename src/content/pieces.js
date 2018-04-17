@@ -194,7 +194,7 @@ export default {
       link: 'column',
       type: 'photo',
       stuff: {
-        title: 'Column',
+        title: 'Vinyl Sticker Drawing #4',
         imgSrc: ['67_column-3.jpg'],
         series: 'freestylez',
         date: '2017'
@@ -205,7 +205,7 @@ export default {
       link: 'ceiling',
       type: 'photo',
       stuff: {
-        title: 'Untitled',
+        title: 'Vinyl Sticker Drawing #3',
         imgSrc: [
           '66_ceiling-2-newer.jpg',
           '65_ceiling-1-newer.jpg'
@@ -230,7 +230,7 @@ export default {
       link: 'gold-statue',
       type: 'photo',
       stuff: {
-        title: 'Untitled',
+        title: 'Vinyl Sticker Drawing #2',
         imgSrc: ['64_gold-statue-2.jpg'],
         series: 'freestylez',
         date: '2017'
@@ -241,7 +241,7 @@ export default {
       link: 'fortaleza',
       type: 'photo',
       stuff: {
-        title: 'Untitled',
+        title: 'Vinyl Sticker Drawing #1',
         imgSrc: ['63_fortaleza-4.jpg'],
         series: 'freestylez',
         date: '2017'
@@ -555,7 +555,7 @@ export default {
       link: 'billenium',
       type: 'photo',
       stuff: {
-        title: 'Untitled',
+        title: 'Billenium',
         imgSrc: ['31_billenium.jpg'],
         series: 'foundation myths',
         date: '2016'
