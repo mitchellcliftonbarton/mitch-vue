@@ -2,7 +2,7 @@
   <ul class="index-button">
     <li>
       <a href="#" @click.prevent="indexSwitch()" :key="this.$store.state.indexView">
-        {{ this.$store.state.indexView ? '---' : '==='}}
+        {{ this.$store.state.indexView ? '=== Projects' : '--- Index'}}
       </a>
     </li>
   </ul>

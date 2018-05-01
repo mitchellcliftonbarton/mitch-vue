@@ -11,6 +11,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "gsap": "^1.20.4",
     "lodash": "^4.17.5",
     "node-sass": "^4.7.2",
     "vue": "^2.5.16",

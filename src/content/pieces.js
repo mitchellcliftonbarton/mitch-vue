@@ -1,6 +1,204 @@
 export default {
   pieces: [
     {
+      hiddenTitle: 'Steven Portrait',
+      link: 'steven',
+      type: 'photo',
+      stuff: {
+        title: 'Steven',
+        imgSrc: ['steven-portrait.jpg'],
+        series: 'freestylez',
+        date: '2017'
+      }
+    },
+    {
+      hiddenTitle: 'Palm',
+      link: 'palm',
+      type: 'photo',
+      stuff: {
+        title: 'Palm',
+        imgSrc: ['palm.jpg'],
+        series: 'freestylez',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Venues',
+      link: 'venues',
+      type: 'photo',
+      stuff: {
+        title: 'Venues',
+        imgSrc: ['venues.jpg'],
+        series: 'freestylez',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Yellow Rock Background',
+      link: 'yellow-rock-background',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['yellow-rock-bkg-web.jpg'],
+        series: 'foundation myths',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Speaker',
+      link: 'speaker',
+      type: 'photo',
+      stuff: {
+        title: 'Speaker',
+        imgSrc: ['speaker.jpg'],
+        series: 'freestylez',
+        date: '2017'
+      }
+    },
+    {
+      hiddenTitle: 'Pollen',
+      link: 'pollen',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['pollen.jpg'],
+        series: 'freestylez',
+        date: '2017'
+      }
+    },
+    {
+      hiddenTitle: 'Paparazzi',
+      link: 'paparazzi',
+      type: 'photo',
+      stuff: {
+        title: 'Paparazzi',
+        imgSrc: ['paparazzi-2.jpg'],
+        series: 'freestylez',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Necklace',
+      link: 'necklace',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['necklace.jpg'],
+        series: 'freestylez',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Listen Up',
+      link: 'listen-up',
+      type: 'photo',
+      stuff: {
+        title: 'Listen Up',
+        imgSrc: ['listen-up.jpg'],
+        series: 'freestylez',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Input Output',
+      link: 'input-output',
+      type: 'photo',
+      stuff: {
+        title: 'Input/Output',
+        imgSrc: ['input-output.jpg'],
+        series: 'freestylez',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Foam Finger',
+      link: 'foam-finger',
+      type: 'photo',
+      stuff: {
+        title: 'Foam Finger',
+        imgSrc: ['foam-finger-plain.jpg'],
+        series: 'freestylez',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Finals',
+      link: 'finals',
+      type: 'photo',
+      stuff: {
+        title: 'Finals',
+        imgSrc: ['finals.jpg'],
+        series: 'freestylez',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Crank Up The Volume',
+      link: 'crank-up-the-volume',
+      type: 'photo',
+      stuff: {
+        title: 'Crank Up The Volume',
+        imgSrc: ['crank-up-the-volume.jpg'],
+        series: 'freestylez',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Cord Color',
+      link: 'cord-color',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['cord-color.jpg'],
+        series: 'freestylez',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Coming At You Live',
+      link: 'coming-at-you-live',
+      type: 'photo',
+      stuff: {
+        title: 'Coming At You Live!!',
+        imgSrc: ['coming-at-you-live.jpg'],
+        series: 'freestylez',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Check It Out',
+      link: 'check-it-out',
+      type: 'photo',
+      stuff: {
+        title: 'Check It Out',
+        imgSrc: ['check-it-out.jpg'],
+        series: 'freestylez',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Card Bag',
+      link: 'card-bag',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['card-bag.jpg'],
+        series: 'freestylez',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Car Reflection',
+      link: 'car-reflection',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['car-reflection.jpg'],
+        series: 'freestylez',
+        date: '2018'
+      }
+    },
+    {
       hiddenTitle: 'Dossier-#12',
       link: 'dossier-12',
       type: 'photo',
@@ -190,6 +388,28 @@ export default {
       }
     },
     {
+      hiddenTitle: 'Rapping Sol Lewitt',
+      link: 'rapping-sol-lewitt',
+      type: 'audio',
+      stuff: {
+        title: 'Rapping Sol Lewitt',
+        imgSrc: ['rapping-sol-lewitt.mp3'],
+        series: 'no series',
+        date: '2017'
+      }
+    },
+    {
+      hiddenTitle: 'Buzzer Beaters',
+      link: 'buzzer-beaters',
+      type: 'video',
+      stuff: {
+        title: 'Buzzer Beaters',
+        imgSrc: ['buzzer-beaters.mp4'],
+        series: 'freestylez',
+        date: '2017'
+      }
+    },
+    {
       hiddenTitle: 'Column',
       link: 'column',
       type: 'photo',
@@ -211,6 +431,17 @@ export default {
           '65_ceiling-1-newer.jpg'
         ],
         series: 'freestylez',
+        date: '2017'
+      }
+    },
+    {
+      hiddenTitle: 'vhs',
+      link: 'untitled-vhs',
+      type: 'video',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['untitled.mp4'],
+        series: 'no series',
         date: '2017'
       }
     },
@@ -270,23 +501,78 @@ export default {
       }
     },
     {
-      hiddenTitle: 'Monument 8',
-      link: 'monument-8',
+      hiddenTitle: 'Monument 12',
+      link: 'monument-12',
       type: 'video',
       stuff: {
-        title: 'Monument Feed #8',
-        imgSrc: ['monument-8-2-new.mp4'],
+        title: 'Monument Feed #12',
+        imgSrc: ['monument-12.mp4'],
         series: 'foundation myths',
         date: '2017'
       }
     },
     {
-      hiddenTitle: 'Saliva',
-      link: 'saliva',
-      type: 'audio',
+      hiddenTitle: 'Monument 11',
+      link: 'monument-11',
+      type: 'video',
       stuff: {
-        title: 'Saliva',
-        imgSrc: ['saliva.mp3'],
+        title: 'Monument Feed #11',
+        imgSrc: ['monument-11.mp4'],
+        series: 'foundation myths',
+        date: '2017'
+      }
+    },
+    {
+      hiddenTitle: 'Monument 10',
+      link: 'monument-10',
+      type: 'video',
+      stuff: {
+        title: 'Monument Feed #10',
+        imgSrc: ['monument-10.mp4'],
+        series: 'foundation myths',
+        date: '2017'
+      }
+    },
+    {
+      hiddenTitle: 'Monument 9',
+      link: 'monument-9',
+      type: 'video',
+      stuff: {
+        title: 'Monument Feed #9',
+        imgSrc: ['monument-9.mp4'],
+        series: 'foundation myths',
+        date: '2017'
+      }
+    },
+    {
+      hiddenTitle: 'Monument 8',
+      link: 'monument-8',
+      type: 'video',
+      stuff: {
+        title: 'Monument Feed #8',
+        imgSrc: ['monument-8.mp4'],
+        series: 'foundation myths',
+        date: '2017'
+      }
+    },
+    {
+      hiddenTitle: 'Monument 7',
+      link: 'monument-7',
+      type: 'video',
+      stuff: {
+        title: 'Monument Feed #7',
+        imgSrc: ['monument-7.mp4'],
+        series: 'foundation myths',
+        date: '2017'
+      }
+    },
+    {
+      hiddenTitle: 'Monument 6',
+      link: 'monument-6',
+      type: 'video',
+      stuff: {
+        title: 'Monument Feed #6',
+        imgSrc: ['monument-6.mp4'],
         series: 'foundation myths',
         date: '2017'
       }
@@ -311,6 +597,18 @@ export default {
         imgSrc: ['58_card.jpg'],
         series: 'freestylez',
         date: '2016'
+      }
+    },
+    {
+      hiddenTitle: 'Freestylez Doc',
+      link: 'freestylez-doc',
+      type: 'video',
+      stuff: {
+        title: 'Freestylez (Installation View)',
+        imgSrc: ['freestylez.mp4'],
+        series: 'freestylez',
+        date: '2016',
+        text: '"F R E E S T Y L E Z ( B A T T L E )" is a computer program that when started, will freestyle rap over a variety of beats on the command line! The following link contains a zip file that once unzipped, will include a README file, AVbin, as well as an .exe file that can be run by double clicking. For installation instructions, read the README file. Once opened, the program will open the terminal app, as well as a separate window with graphics. Click <a href="http://mitchellbarton.com/freestylez-app/freestylez-app.zip">HERE</a> to download. Currently only works with Mac Operating Systems. There is also a web version <a href="http://freestylez.mitchellbarton.com/" target="_blank">HERE</a>.'
       }
     },
     {
@@ -462,7 +760,7 @@ export default {
       type: 'photo',
       stuff: {
         title: 'Untitled',
-        imgSrc: ['44_spray-2.jpg'],
+        imgSrc: ['spray-2.jpg'],
         series: 'freestylez',
         date: '2017'
       }
@@ -526,6 +824,18 @@ export default {
         imgSrc: ['38_pages.jpg'],
         series: 'foundation myths',
         date: '2016'
+      }
+    },
+    {
+      hiddenTitle: 'bswsgs',
+      link: 'bswsgs',
+      type: 'photo',
+      stuff: {
+        title: 'Black Sand White Sand Grey Sand',
+        imgSrc: ['bswsgs.jpg'],
+        series: 'black sand white sand grey sand',
+        date: '2016',
+        text: 'BSWSGS is a collection of screenshots made by a chrome extension of the same name, which are hosted at <a href="http://banalbanal.org/media/bb0005/index.html" target="_blank">BANAL BANAL</a>. The chrome extension is available for free download <a href="https://chrome.google.com/webstore/detail/black-sand-white-sand-gre/bcofpmgmfalomalhpmimoakibljcjchc" target="_blank">HERE</a>. All images created are posted.'
       }
     },
     {
@@ -776,7 +1086,18 @@ export default {
           '1_rising-falling-photo.jpg',
           '2_rising-falling-photo2.jpg'
         ],
-        series: 'rising falling',
+        series: 'no series',
+        date: '2015'
+      }
+    },
+    {
+      hiddenTitle: 'Rising Falling',
+      link: 'rising-falling-doc',
+      type: 'video',
+      stuff: {
+        title: 'Rising/Falling',
+        imgSrc: ['rising-falling-doc.mp4'],
+        series: 'no series',
         date: '2015'
       }
     }

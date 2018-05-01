@@ -1,12 +1,17 @@
 <template>
   <div class="work-container col-12 col-md-9 offset-md-3">
     <div class="inner pt-5">
-      <div v-for="(piece, index) in this.theProject" class="m-0" :key="index">
+      <div v-for="(piece, index) in this.theProject" class="row m-0" :key="index">
         <ImageSec v-if="piece.type === 'photo'" :piece="piece" :images="piece.stuff.imgSrc" :num="index" v-on:switch-large="switchLarge"></ImageSec>
 
         <VideoSec v-else-if="piece.type === 'video'" :piece="piece" :data-num="index"></VideoSec>
 
         <AudioSec v-else-if="piece.type === 'audio'" :piece="piece" :data-num="index"></AudioSec>
+
+        <PieceInfo
+          :piece="piece"
+          :isPiece="false"
+        ></PieceInfo>
       </div>
     </div>
 
@@ -24,6 +29,7 @@ import ImageSec from './media/ImageSec'
 import VideoSec from './media/VideoSec'
 import AudioSec from './media/AudioSec'
 import LargeView from './LargeView'
+import PieceInfo from './PieceInfo'
 
 export default {
   name: 'Project',
@@ -31,7 +37,8 @@ export default {
     VideoSec,
     AudioSec,
     ImageSec,
-    LargeView
+    LargeView,
+    PieceInfo
   },
   data () {
     return {

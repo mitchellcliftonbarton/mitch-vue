@@ -177,9 +177,9 @@ export default {
     width        : 100vw;
     height       : 100vh;
     pointer-events: none;
+    z-index      : 100;
 
     @include breakpoint(xs-up) {
-      // width          : 25vw;
       border-right   : 1px solid #efefef;
       pointer-events : auto;
     }
@@ -198,7 +198,7 @@ export default {
 
     .menu-button {
       pointer-events : auto;
-      position       : fixed;
+      position       : absolute;
       top            : 15px;
       right          : 25px;
       transform      : rotate(0deg);

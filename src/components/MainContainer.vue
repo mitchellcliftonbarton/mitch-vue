@@ -1,6 +1,6 @@
 <template>
-  <div class="main-container container-fluid">
-    <div class="row">
+  <div class="main-container container-fluid h-100">
+    <div class="row h-100">
       <Nav></Nav>
       <router-view></router-view>
     </div>
@@ -19,10 +19,4 @@ export default {
 </script>
 
 <style lang="scss">
-
-  .main-container {
-    // display         : flex;
-    // height          : 100%;
-    // justify-content : flex-end;
-  }
 </style>

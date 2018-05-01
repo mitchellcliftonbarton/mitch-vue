@@ -36,6 +36,7 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
+      'TweenMax': path.resolve('node_modules', 'gsap/src/uncompressed/TweenMax.js')
     }
   },
   module: {

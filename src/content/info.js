@@ -106,10 +106,13 @@ export default {
       text: '<a href="http://selfpublishbehappy.com/2017/10/a-little-bit-cooler-by-mitchel-barton/" target="_blank">Self Publish Be Happy</a>'
     },
     {
+      text: '<a href="http://klikkentheke.com/websites/mitchell-barton/" target="_blank">Klikkentheke</a>'
+    },
+    {
       text: '<a href="http://brutalistwebsites.com/mitchellbarton.com/" target="_blank">Brutalist Websites</a>'
     },
     {
-      text: '<a href="http://latentimage.us/2017/02/18/mitchell-barton-coma/" target="_blank">The Latent Image</a>'
+      text: 'The Latent Image'
     }
   ],
   awards: [

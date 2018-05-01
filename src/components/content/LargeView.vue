@@ -1,7 +1,7 @@
 <template>
   <transition name="fade-in">
     <div class="lg-view position-fixed w-100 h-100 d-flex justify-content-center align-items-center">
-      <img :src="image" @click="$emit('switch-large')">
+      <img class="piece-image" :src="image" @click="$emit('switch-large')">
     </div>
   </transition>
 </template>
@@ -21,6 +21,7 @@ export default {
     left: 0px;
     background: white;
     pointer-events: none;
+    z-index: 100;
 
     &.active {
       pointer-events: auto;

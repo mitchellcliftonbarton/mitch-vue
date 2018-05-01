@@ -1,16 +1,19 @@
 <template>
-  <div id="app">
+  <div id="app" class="h-100">
     <router-view/>
+    <Mouse></Mouse>
   </div>
 </template>
 
 <script>
 import store from './store'
 import pieces from './content/pieces'
+import Mouse from './components/content/Mouse'
 
 export default {
   name: 'App',
   store,
+  components: { Mouse },
   beforeCreate () {
     pieces.pieces.forEach((e) => {
       if (this.$store.state.series.hasOwnProperty(e.stuff.series)) {

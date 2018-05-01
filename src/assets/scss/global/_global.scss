@@ -17,7 +17,8 @@ time, mark, audio, video {
   font-size      : 100%;
   font           : inherit;
   vertical-align : baseline;
-  font-family    : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  // font-family    : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -53,11 +54,9 @@ span {
 
 .home-container,
 .cv-container {
-  // flex    : 1 1 100%;
   padding : 20px;
 
   @include breakpoint(xs-up) {
-    // flex    : 0 0 75%;
     padding : 0px;
   }
 
@@ -65,7 +64,6 @@ span {
     padding : 0px;
 
     @include breakpoint(xs-up) {
-      // padding: 10% 5%;
       display : flex;
     }
 
@@ -79,7 +77,6 @@ span {
     }
 
     .piece-info {
-      // flex: 1 0 30%;
       padding: 40px 0px;
     }
   }
@@ -116,15 +113,58 @@ span {
 }
 
 .work-container {
-  // flex    : 1 1 100%;
   padding : 20px;
 
   @include breakpoint(xs-up) {
-    // flex    : 0 0 75%;
     padding : 0px;
   }
 
   img {
     width: 60%;
+  }
+}
+
+.text {
+  p {
+    line-height: 1.6em;
+  }
+}
+
+.text p a,
+.piece-info a,
+.home-container a {
+  display       : inline-block;
+  color         : black;
+  border-bottom : 1px solid #c3c3c3;
+  transition    : background .3s, border .3s;
+
+  &:hover {
+    border-bottom : 1px solid #969696;
+  }
+}
+
+.home-container .links {
+  li {
+    margin: 0px 0px 10px 0px;
+  }
+
+  p {
+    color: #dcdcdc;
+    cursor: not-allowed;
+    display: inline-block;
+  }
+}
+
+.work-container {
+  cursor: pointer;
+
+  .piece,
+  .piece-info,
+  .image-sec {
+    cursor: pointer;
+  }
+
+  p {
+    cursor: text;
   }
 }
