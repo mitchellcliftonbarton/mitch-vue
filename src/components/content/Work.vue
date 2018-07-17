@@ -3,37 +3,45 @@
     class="work-container col-12 col-md-9 offset-md-3"
   >
     <div class="row image-sec">
-      <ImageSec
-        v-if="this.thePiece.type === 'photo'"
-        class="m-0 pt-5 inner"
-        :piece="this.thePiece"
-        :images="this.thePiece.stuff.imgSrc"
-        v-on:switch-large="switchLarge()"
-      ></ImageSec>
+      <transition name="image-in" mode="out-in" appear>
+        <ImageSec
+          v-if="this.thePiece.type === 'photo'"
+          class="m-0 pt-5 inner"
+          :piece="this.thePiece"
+          :images="this.thePiece.stuff.imgSrc"
+          v-on:switch-large="switchLarge()"
+          :key="this.thePiece.link"
+        ></ImageSec>
 
-      <VideoSec
-        v-else-if="this.thePiece.type === 'video'"
-        :piece="this.thePiece"
-        class="inner m-0 pt-5"
-      >
-      </VideoSec>
+        <VideoSec
+          v-else-if="this.thePiece.type === 'video'"
+          :piece="this.thePiece"
+          class="inner m-0 pt-5"
+          :key="this.thePiece.link"
+        >
+        </VideoSec>
 
-      <AudioSec
-        v-else-if="this.thePiece.type === 'audio'"
-        :piece="this.thePiece"
-        class="inner m-0 pt-5"
-      ></AudioSec>
+        <AudioSec
+          v-else-if="this.thePiece.type === 'audio'"
+          :piece="this.thePiece"
+          class="inner m-0 pt-5"
+          :key="this.thePiece.link"
+        ></AudioSec>
+      </transition>
 
       <PieceInfo
         :piece="this.thePiece"
         :isPiece="this.isPiece"
       ></PieceInfo>
-
-      <PieceText
-        v-if="this.thePiece.stuff.text && this.$route.params.piece"
-        :piece="this.thePiece"
-      ></PieceText>
     </div>
+
+    <transition name="text-in" mode="out-in" appear>
+      <PieceText
+        v-if="this.thePiece.stuff.text"
+        :piece="this.thePiece"
+        :key="this.thePiece.stuff.text"
+      ></PieceText>
+    </transition>
 
     <LargeView
       v-if="zoomed"
@@ -69,9 +77,7 @@ export default {
   },
   computed: {
     thePiece () {
-      return this.$store.state.pieces.find((e) => {
-        return e.link === this.$route.params.piece
-      })
+      return this.$store.state.pieces.find(e => e.link === this.$route.params.piece)
     },
     isPiece () {
       return this.$route.params.piece

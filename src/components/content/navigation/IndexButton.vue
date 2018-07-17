@@ -16,19 +16,15 @@ export default {
       if (this.$store.state.indexView) {
         this.$store.dispatch('setIndexView', false)
 
-        if (this.$route.name === 'home' || this.$route.name === 'info') {
-          // return
-        } else {
-          this.$store.state.projCrumb ? console.log('yup') : this.$store.dispatch('setIndexCrumb', true)
+        if (this.$route.name !== 'home' && this.$route.name !== 'info') {
+          if (this.$store.state.projCrumb) this.$store.dispatch('setIndexCrumb', true)
           this.$store.dispatch('setProjCrumb', false)
         }
       } else {
         this.$store.dispatch('setIndexView', true)
 
-        if (this.$route.name === 'home' || this.$route.name === 'info') {
-          // return
-        } else {
-          this.$store.state.indexCrumb ? console.log('yup') : this.$store.dispatch('setProjCrumb', true)
+        if (this.$route.name !== 'home' && this.$route.name !== 'info') {
+          if (this.$store.state.indexCrumb) this.$store.dispatch('setProjCrumb', true)
           this.$store.dispatch('setIndexCrumb', false)
         }
       }

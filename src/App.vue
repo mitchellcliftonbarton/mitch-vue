@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="h-100">
     <router-view/>
-    <Mouse></Mouse>
+    <Mouse v-if="!this.$store.state.isMobile"></Mouse>
   </div>
 </template>
 
@@ -16,22 +16,18 @@ export default {
   components: { Mouse },
   beforeCreate () {
     pieces.pieces.forEach((e) => {
-      if (this.$store.state.series.hasOwnProperty(e.stuff.series)) {
-        this.$store.dispatch('addToSeries', e)
-      } else {
-        this.$store.dispatch('newSeries', e)
-      }
+      this.$store.state.series.hasOwnProperty(e.stuff.series)
+        ? this.$store.dispatch('addToSeries', e)
+        : this.$store.dispatch('newSeries', e)
     })
 
-    if (window.matchMedia('(max-width: 815px)').matches) {
-      this.$store.dispatch('setIsMobile', true)
-    } else {
-      this.$store.dispatch('setIsMobile', false)
-    }
+    window.matchMedia('(max-width: 815px)').matches
+      ? this.$store.dispatch('setIsMobile', true)
+      : this.$store.dispatch('setIsMobile', false)
   }
 }
 </script>
 
 <style lang="scss">
-    @import "assets/scss/main.scss";
+  @import "assets/scss/main.scss";
 </style>

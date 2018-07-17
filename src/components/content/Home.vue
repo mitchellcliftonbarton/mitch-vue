@@ -22,7 +22,7 @@
             </ul>
           </div>
           <div class="col-4">
-            <p class="block">This is version 2.0 of this site. To view version 1.0, click <a href="http://v1.mitchellbarton.com/" target="_blank">HERE</a></p>
+            <p class="block">This is version 2.0.1 of this site. To view version 1.0, click <a href="http://v1.mitchellbarton.com/" target="_blank">HERE</a></p>
           </div>
         </div>
       </div>

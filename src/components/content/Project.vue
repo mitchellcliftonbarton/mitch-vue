@@ -2,16 +2,28 @@
   <div class="work-container col-12 col-md-9 offset-md-3">
     <div class="inner pt-5">
       <div v-for="(piece, index) in this.theProject" class="row m-0" :key="index">
-        <ImageSec v-if="piece.type === 'photo'" :piece="piece" :images="piece.stuff.imgSrc" :num="index" v-on:switch-large="switchLarge"></ImageSec>
+        <transition name="image-in" mode="out-in" appear>
+          <ImageSec
+            v-if="piece.type === 'photo'"
+            :piece="piece"
+            :images="piece.stuff.imgSrc"
+            :num="index"
+            v-on:switch-large="switchLarge"
+            :key="piece.link"
+          ></ImageSec>
 
-        <VideoSec v-else-if="piece.type === 'video'" :piece="piece" :data-num="index"></VideoSec>
+          <VideoSec v-else-if="piece.type === 'video'" :piece="piece" :data-num="index" :key="piece.link"></VideoSec>
 
-        <AudioSec v-else-if="piece.type === 'audio'" :piece="piece" :data-num="index"></AudioSec>
+          <AudioSec v-else-if="piece.type === 'audio'" :piece="piece" :data-num="index" :key="piece.link"></AudioSec>
+        </transition>
 
-        <PieceInfo
-          :piece="piece"
-          :isPiece="false"
-        ></PieceInfo>
+        <transition name="info-in" mode="out-in" appear>
+          <PieceInfo
+            :piece="piece"
+            :isPiece="false"
+            :key="piece.hiddenTitle"
+          ></PieceInfo>
+        </transition>
       </div>
     </div>
 

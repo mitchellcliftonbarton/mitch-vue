@@ -83,9 +83,7 @@ export default {
     },
     pieceLink () {
       if (!this.$store.state.indexView) {
-        return this.$store.state.pieces.find((e) => {
-          return e.link === this.$route.params.piece
-        })
+        return this.$store.state.pieces.find(e => e.link === this.$route.params.piece)
       } else {
         return false
       }
@@ -116,11 +114,7 @@ export default {
       this.isOpen ? this.isOpen = false : this.isOpen = true
     },
     checkCurrent (e) {
-      if (e.classList.contains('router-link-active')) {
-        return true
-      } else {
-        return false
-      }
+      return e.classList.contains('router-link-active')
     },
     arrowRoute (num, event) {
       // this.currentLinks = [...document.querySelectorAll('.dir')]

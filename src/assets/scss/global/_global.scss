@@ -120,7 +120,19 @@ span {
   }
 
   img {
-    width: 60%;
+    width: 100%;
+
+    @include breakpoint(xs-up) {
+      width: 60%;
+    }
+  }
+
+  .piece-info {
+    margin-bottom: 40px;
+
+    @include breakpoint(xs-up) {
+      margin-bottom: 0px;
+    }
   }
 }
 
@@ -156,7 +168,6 @@ span {
 }
 
 .work-container {
-  cursor: pointer;
 
   .piece,
   .piece-info,

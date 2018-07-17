@@ -57,11 +57,7 @@ export default {
   },
   computed: {
     theColor () {
-      if (this.zoom) {
-        return 'rgba(255, 0, 0, 0.5)'
-      } else {
-        return 'rgba(250, 250, 40, .5)'
-      }
+      return this.zoom ? 'rgba(255, 0, 0, 0.5)' : 'rgba(250, 250, 40, .5)'
     }
   },
   methods: {
@@ -78,7 +74,6 @@ export default {
     moveListen () {
       document.addEventListener('mousemove', (e) => {
         this.onMove(e)
-        // console.log(e)
 
         if (e.target.classList.contains('next-link')) {
           // for next mouse

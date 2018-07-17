@@ -1,7 +1,7 @@
 <template>
   <div class="cv-container col-12 col-md-9 offset-md-3">
     <transition name="image-in" mode="out-in" appear>
-      <div class="inner">
+      <div class="inner" key="info">
         <div class="personal-info">
           <p>{{ this.content.email }}</p>
           <p v-html="this.content.about"></p>
@@ -12,13 +12,16 @@
 
         <div class="education section">
           <p>Education</p>
-          <p class="year"><span>{{ this.content.education.year }} - </span><span>{{ this.content.education.text }}</span></p>
+          <p class="year">
+            <span>{{ this.content.education.year }}</span>
+            <span>{{ this.content.education.text }}</span>
+          </p>
         </div>
 
         <div class="solo section">
           <p>Solo Exhibitions</p>
           <div v-for="(year, index) in this.content.solo" :key="index" class="year">
-            <p>{{ year.year }}</p>
+            <p class="year-text">{{ year.year }}</p>
             <div class="shows">
               <p v-for="(show, index) in year.shows" :key="index" v-html="show.text"></p>
             </div>
@@ -28,7 +31,7 @@
         <div class="group section">
           <p>Group Exhibitions</p>
           <div v-for="(year, index) in this.content.group" :key="index" class="year">
-            <p>{{ year.year }}</p>
+            <p class="year-text">{{ year.year }}</p>
             <div class="shows">
               <p v-for="(show, index) in year.shows" :key="index" v-html="show.text"></p>
             </div>
@@ -118,6 +121,21 @@ export default {
       }
     }
 
+    .education {
+      .year {
+        display: flex;
+
+        span:first-child {
+          flex: 1 0 5%;
+          margin-right: 5%;
+        }
+
+        span:last-child {
+          flex: 1 0 95%;
+        }
+      }
+    }
+
     .section {
       margin-top : 50px;
 
@@ -127,13 +145,20 @@ export default {
 
       .year {
         margin-top : 50px;
+        display: flex;
 
         @include breakpoint(xs-up) {
           margin-top: 20px;
         }
 
+        .year-text {
+          flex: 1 0 5%;
+          margin-right: 5%;
+        }
+
         .shows {
-          margin-top : 10px;
+          // margin-top : 10px;
+          flex: 1 0 90%;
 
           p {
             margin-bottom: 20px;

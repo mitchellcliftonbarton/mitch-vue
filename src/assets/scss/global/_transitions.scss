@@ -1,5 +1,7 @@
 .info-in-enter,
 .info-in-leave-to,
+.text-in-enter,
+.text-in-leave-to,
 .image-in-enter,
 .image-in-leave-to {
   opacity: 0;
@@ -9,17 +11,20 @@
   transform: translateY(10px);
 }
 
-.image-in-enter {
+.image-in-enter,
+.text-in-enter {
   transform: translateY(20px);
 }
 
 .info-in-enter-to,
-.image-in-enter-to {
+.image-in-enter-to,
+.text-in-enter-to {
   transform: translateY(0px);
 }
 
 .info-in-leave,
-.image-in-leave {
+.image-in-leave,
+.text-in-leave {
   transform: translateY(0px);
 }
 
@@ -27,12 +32,15 @@
   transform: translateY(-10px);
 }
 
-.image-in-leave-to {
+.image-in-leave-to,
+.text-in-leave-to {
   transform: translateY(-10px);
 }
 
 .info-in-enter-to,
 .info-in-leave,
+.text-in-enter-to,
+.text-in-leave,
 .image-in-enter-to,
 .image-in-leave {
   opacity: 1;
@@ -45,5 +53,14 @@
 
 .image-in-enter-active,
 .image-in-leave-active {
-  transition: opacity cubic-bezier(.4,.46,.07,.91) .4s, transform cubic-bezier(.4,.46,.07,.91) .4s;
+  transition: opacity cubic-bezier(.4,.46,.07,.91) .3s, transform cubic-bezier(.4,.46,.07,.91) .3s;
+}
+
+.text-in-enter-active,
+.text-in-leave-active {
+  transition: opacity cubic-bezier(.4,.46,.07,.91) .3s, transform cubic-bezier(.4,.46,.07,.91) .3s;
+}
+
+.text-in-enter-active {
+  transition-delay: .3s;
 }

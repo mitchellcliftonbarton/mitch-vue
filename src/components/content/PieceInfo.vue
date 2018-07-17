@@ -1,5 +1,4 @@
 <template>
-  <transition name="info-in" mode="out-in" appear>
     <div
       class="piece-info col-12 col-md-3 d-flex flex-column"
       :key="piece.hiddenTitle"
@@ -20,7 +19,6 @@
         </p>
       </div>
     </div>
-  </transition>
 </template>
 
 <script>
@@ -32,27 +30,16 @@ export default {
   ],
   computed: {
     pieceIndex () {
-      return this.$store.state.pieces.findIndex((s) => {
-        return s.link === this.isPiece
-      })
+      return this.$store.state.pieces.findIndex(s => s.link === this.isPiece)
     },
     nextLink () {
-      if ((this.pieceIndex + 1) === this.$store.state.pieces.length) {
-        return false
-      } else {
-        return `/work/${this.$store.state.pieces[this.pieceIndex + 1].link}`
-      }
+      return (this.pieceIndex + 1) === this.$store.state.pieces.length
+        ? false
+        : `/work/${this.$store.state.pieces[this.pieceIndex + 1].link}`
     },
     prevLink () {
-      if (this.pieceIndex === 0) {
-        return null
-      } else {
-        return `/work/${this.$store.state.pieces[this.pieceIndex - 1].link}`
-      }
+      return this.pieceIndex === 0 ? null : `/work/${this.$store.state.pieces[this.pieceIndex - 1].link}`
     }
-  },
-  mounted () {
-    console.log(this.$store.state.pieces.length)
   }
 }
 </script>

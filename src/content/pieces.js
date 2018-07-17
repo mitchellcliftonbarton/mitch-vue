@@ -1,6 +1,219 @@
 export default {
   pieces: [
     {
+      hiddenTitle: 'The End is Near',
+      link: 'the-end-is-near',
+      type: 'photo',
+      stuff: {
+        title: 'The End Is Near',
+        imgSrc: [
+          'shirt-red.jpg',
+          'shirt-blue.jpg',
+          'shirt-purple.jpg'
+        ],
+        series: 'foundation myths',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'sunglasses',
+      link: 'sunglasses',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['sunglasses.jpg'],
+        series: 'freestylez',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'satellite',
+      link: 'satellite',
+      type: 'photo',
+      stuff: {
+        title: 'Satellite',
+        imgSrc: ['satellite.jpg'],
+        series: 'freestylez',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Dossier-#20',
+      link: 'dossier-20',
+      type: 'photo',
+      stuff: {
+        title: 'Dossier #20',
+        imgSrc: ['dossier-20.jpg'],
+        series: 'dossiers',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Dossier-#19',
+      link: 'dossier-19',
+      type: 'photo',
+      stuff: {
+        title: 'Dossier #19',
+        imgSrc: ['dossier-19.jpg'],
+        series: 'dossiers',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Dossier-#18',
+      link: 'dossier-18',
+      type: 'photo',
+      stuff: {
+        title: 'Dossier #18',
+        imgSrc: ['dossier-18.jpg'],
+        series: 'dossiers',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Dossier-#17',
+      link: 'dossier-17',
+      type: 'photo',
+      stuff: {
+        title: 'Dossier #17',
+        imgSrc: ['dossier-17.jpg'],
+        series: 'dossiers',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Dossier-#16',
+      link: 'dossier-16',
+      type: 'photo',
+      stuff: {
+        title: 'Dossier #16',
+        imgSrc: ['dossier-16.jpg'],
+        series: 'dossiers',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Dossier-#15',
+      link: 'dossier-15',
+      type: 'photo',
+      stuff: {
+        title: 'Dossier #15',
+        imgSrc: ['dossier-15.jpg'],
+        series: 'dossiers',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Dossier-#14',
+      link: 'dossier-14',
+      type: 'photo',
+      stuff: {
+        title: 'Dossier #14',
+        imgSrc: ['dossier-14.jpg'],
+        series: 'dossiers',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Dossier-#13',
+      link: 'dossier-13',
+      type: 'photo',
+      stuff: {
+        title: 'Dossier #13',
+        imgSrc: ['dossier-13.jpg'],
+        series: 'dossiers',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'World',
+      link: 'world',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['world.jpg'],
+        series: 'foundation myths',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'freestylez-sticker',
+      link: 'freestylez-sticker',
+      type: 'photo',
+      stuff: {
+        title: 'Freestylez Vinyl Sticker',
+        imgSrc: ['t-12.jpg'],
+        series: 'freestylez',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'pink-painting',
+      link: 'pink-painting',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['t-17.jpg'],
+        series: 'no series',
+        date: '2017'
+      }
+    },
+    {
+      hiddenTitle: 'elephant-print',
+      link: 'elephant-print',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['t-22.jpg'],
+        series: 'freestylez',
+        date: '2017'
+      }
+    },
+    {
+      hiddenTitle: 'laundry',
+      link: 'laundry',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['laundry.jpg'],
+        series: 'no series',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'telestrator-drawing-2',
+      link: 'telestrator-drawing-2',
+      type: 'photo',
+      stuff: {
+        title: 'Telestrator Drawing #2',
+        imgSrc: ['telestrator-drawing-2.jpg'],
+        series: 'telestrator drawings',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'telestrator-drawing-1',
+      link: 'telestrator-drawing-1',
+      type: 'photo',
+      stuff: {
+        title: 'Telestrator Drawing #1',
+        imgSrc: ['telestrator-drawing-1.jpg'],
+        series: 'telestrator drawings',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Garage',
+      link: 'garage',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['garage.jpg'],
+        series: 'freestylez',
+        date: '2018'
+      }
+    },
+    {
       hiddenTitle: 'Steven Portrait',
       link: 'steven',
       type: 'photo',
@@ -30,6 +243,40 @@ export default {
         title: 'Venues',
         imgSrc: ['venues.jpg'],
         series: 'freestylez',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'Practicing My Signatures',
+      link: 'practicing-my-signatures',
+      type: 'photo',
+      stuff: {
+        title: 'Practicing My Signatures',
+        imgSrc: [
+          'practicing-signatures-1.jpg',
+          'practicing-signatures-2.jpg',
+          'practicing-signatures-3.jpg',
+          'practicing-signatures-4.jpg',
+          'practicing-signatures-5.jpg',
+          'practicing-signatures-6.jpg',
+          'practicing-signatures-7.jpg',
+          'practicing-signatures-8.jpg',
+          'practicing-signatures-9.jpg',
+          'practicing-signatures-10.jpg',
+          'practicing-signatures-11.jpg',
+          'sigs-12.jpg',
+          'sigs-13.jpg',
+          'sigs-14.jpg',
+          'sigs-15.jpg',
+          'sigs-16.jpg',
+          'sigs-17.jpg',
+          'sigs-18.jpg',
+          'sigs-19.jpg',
+          'sigs-20.jpg',
+          'sigs-21.jpg',
+          'sigs-22.jpg'
+        ],
+        series: 'no series',
         date: '2018'
       }
     },
@@ -583,7 +830,9 @@ export default {
       type: 'photo',
       stuff: {
         title: 'Untitled',
-        imgSrc: ['59_chain.jpg'],
+        imgSrc: [
+          '59_chain.jpg'
+        ],
         series: 'freestylez',
         date: '2016'
       }
@@ -639,7 +888,10 @@ export default {
       type: 'photo',
       stuff: {
         title: 'Bar Code',
-        imgSrc: ['55_bar-code.jpg'],
+        imgSrc: [
+          '55_bar-code.jpg',
+          't-11.jpg'
+        ],
         series: 'freestylez',
         date: '2017'
       }
@@ -738,7 +990,10 @@ export default {
       type: 'photo',
       stuff: {
         title: 'Sticker',
-        imgSrc: ['46_sticker.jpg'],
+        imgSrc: [
+          '46_sticker.jpg',
+          't-16.jpg'
+        ],
         series: 'freestylez',
         date: '2017'
       }
@@ -782,7 +1037,10 @@ export default {
       type: 'photo',
       stuff: {
         title: 'Untitled',
-        imgSrc: ['42_shoe-shrink-1.jpg'],
+        imgSrc: [
+          '42_shoe-shrink-1.jpg',
+          't-25.jpg'
+        ],
         series: 'freestylez',
         date: '2017'
       }
@@ -844,7 +1102,10 @@ export default {
       type: 'photo',
       stuff: {
         title: 'Untitled',
-        imgSrc: ['34_knuckles-1.jpg'],
+        imgSrc: [
+          '34_knuckles-1.jpg',
+          't-10.jpg'
+        ],
         series: 'freestylez',
         date: '2016'
       }
