@@ -63,9 +63,9 @@ span {
   .inner {
     padding : 0px;
 
-    @include breakpoint(xs-up) {
-      display : flex;
-    }
+    // @include breakpoint(xs-up) {
+    //   display : flex;
+    // }
 
     .piece {
       flex: 1 0 70%;
@@ -108,7 +108,14 @@ span {
 .cv-container {
   .inner {
     display: block;
-    padding: 70px 5%;
+    padding: 70px 10%;
+    transition: padding .3s;
+  }
+
+  &.open {
+    .inner {
+      padding: 70px 5%;
+    }
   }
 }
 
@@ -132,6 +139,16 @@ span {
 
     @include breakpoint(xs-up) {
       margin-bottom: 0px;
+    }
+
+    a, p {
+      .m & {
+        color: #efefef;
+
+        &:hover {
+          color: black;
+        }
+      }
     }
   }
 }

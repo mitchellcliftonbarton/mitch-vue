@@ -1,9 +1,12 @@
 <template>
   <nav class="nav col-12 col-md-3 p-0" :class="{ 'open': isOpen }">
-    <a v-if="this.$store.state.isMobile" class="menu-button" href="#" @click.prevent="open()">+</a>
+    <a v-if="this.$store.state.isMobile" class="menu-button" href="#" @click.prevent="$emit('menu-toggle')">+</a>
     <div class="nav-inner">
 
-      <IndexButton v-if="!this.$store.state.isMobile"></IndexButton>
+      <IndexButton
+        v-if="!this.$store.state.isMobile"
+        :isOpen="isOpen"
+      ></IndexButton>
 
       <ul class="head-links">
         <li ref="nameLink">
@@ -11,9 +14,28 @@
             class="dir"
             @click.native="close()"
             to="/"
+            v-if="this.$store.state.level === 'e'"
             exact
           >
           Mitchell Barton
+          </router-link>
+          <router-link
+            class="dir"
+            @click.native="close()"
+            to="/"
+            v-else-if="this.$store.state.level === 'm'"
+            exact
+          >
+          MB
+          </router-link>
+          <router-link
+            class="dir"
+            @click.native="close()"
+            to="/"
+            v-else-if="this.$store.state.level === 'h'"
+            exact
+          >
+          🐙
           </router-link>
         </li>
         <li>
@@ -21,8 +43,27 @@
             class="dir"
             @click.native="close()"
             :to="{ name: 'info' }"
+            v-if="this.$store.state.level === 'e'"
           >
           Info
+          </router-link>
+
+          <router-link
+            class="dir"
+            @click.native="close()"
+            :to="{ name: 'info' }"
+            v-else-if="this.$store.state.level === 'm'"
+          >
+          ?
+          </router-link>
+
+          <router-link
+            class="dir"
+            @click.native="close()"
+            :to="{ name: 'info' }"
+            v-else-if="this.$store.state.level === 'h'"
+          >
+          ✉️
           </router-link>
         </li>
       </ul>
@@ -59,9 +100,11 @@ export default {
     Crumbs,
     WorkLinks
   },
+  props: [
+    'isOpen'
+  ],
   data () {
     return {
-      isOpen: false,
       navHeight: null,
       linkHeight: null,
       currentLinks: [],
@@ -108,10 +151,7 @@ export default {
   },
   methods: {
     close () {
-      if (this.$store.state.isMobile) this.isOpen = false
-    },
-    open () {
-      this.isOpen ? this.isOpen = false : this.isOpen = true
+      if (this.$store.state.isMobile) bus.$emit('close-menu')
     },
     checkCurrent (e) {
       return e.classList.contains('router-link-active')
@@ -172,6 +212,8 @@ export default {
     height       : 100vh;
     pointer-events: none;
     z-index      : 100;
+    transform    : translateX(-80%);
+    transition   : transform .3s;
 
     @include breakpoint(xs-up) {
       border-right   : 1px solid #efefef;
@@ -180,9 +222,14 @@ export default {
 
     &.open {
       pointer-events: auto;
+      transform    : translateX(0%);
 
       .nav-inner {
         display: block;
+
+        @include breakpoint(xs-up) {
+          display: inherit;
+        }
       }
 
       .menu-button {
@@ -212,7 +259,7 @@ export default {
         position       : absolute;
         width          : 100%;
         bottom         : 0px;
-        background     : linear-gradient(#ffffff00, white);
+        background     : linear-gradient(rgba(255, 255, 255, 0), white);
         height         : 100px;
         pointer-events : none;
         left           : 0px;
@@ -246,10 +293,31 @@ export default {
         position      : relative;
         border-top    : 1px solid #efefef;
         border-bottom : 1px solid #efefef;
+
+        .m & {
+          border-top: 1px solid transparent;
+          border-bottom: 1px solid transparent;
+        }
+
+        a {
+          color: blue;
+
+          .m & {
+            color: #efefef;
+
+            &:hover {
+              color: blue;
+            }
+          }
+        }
       }
 
       a.router-link-active {
         background: #e4e4e4;
+
+        .m & {
+          color: blue;
+        }
       }
 
       a:focus,
@@ -260,10 +328,16 @@ export default {
       ul {
         li {
           padding: 2px 0px;
+          position: relative;
 
           a {
             padding: 2px 4px;
             border-radius: 8px;
+          }
+
+          .menu-close {
+            position: absolute;
+            right: 0px;
           }
         }
       }

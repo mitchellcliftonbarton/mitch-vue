@@ -1,5 +1,302 @@
 export default {
   pieces: [
+    // {
+    //   hiddenTitle: 'two-websites-in-one',
+    //   link: 'two-websites-in-one',
+    //   type: 'web',
+    //   stuff: {
+    //     title: 'Two Websites In One',
+    //     component: 'TwoWebsitesInOne',
+    //     series: 'no series',
+    //     date: '2018'
+    //   }
+    // },
+    {
+      hiddenTitle: 'card-6',
+      link: 'card-6',
+      type: 'photo',
+      stuff: {
+        title: 'Card #6',
+        imgSrc: ['card-6.jpg'],
+        series: 'razor backs',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'card-5',
+      link: 'card-5',
+      type: 'photo',
+      stuff: {
+        title: 'Card #5',
+        imgSrc: ['card-5.jpg'],
+        series: 'razor backs',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'card-4',
+      link: 'card-4',
+      type: 'photo',
+      stuff: {
+        title: 'Card #4',
+        imgSrc: ['card-4.jpg'],
+        series: 'razor backs',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'card-3',
+      link: 'card-3',
+      type: 'photo',
+      stuff: {
+        title: 'Card #3',
+        imgSrc: ['card-3.jpg'],
+        series: 'razor backs',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'card-2',
+      link: 'card-2',
+      type: 'photo',
+      stuff: {
+        title: 'Card #2',
+        imgSrc: ['card-2.jpg'],
+        series: 'razor backs',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'card-1',
+      link: 'card-1',
+      type: 'photo',
+      stuff: {
+        title: 'Card #1',
+        imgSrc: ['card-1.jpg'],
+        series: 'razor backs',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'vinyl-drawing-4',
+      link: 'vinyl-drawing-4',
+      type: 'photo',
+      stuff: {
+        title: 'Vinyl Drawing #4',
+        imgSrc: ['vinyl-drawing-4.jpg'],
+        series: 'razor backs',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'vinyl-drawing-3',
+      link: 'vinyl-drawing-3',
+      type: 'photo',
+      stuff: {
+        title: 'Vinyl Drawing #3',
+        imgSrc: ['vinyl-drawing-3.jpg'],
+        series: 'razor backs',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'b-vinyl-drawing-5',
+      link: 'b-vinyl-drawing-5',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['b-vinyl-5.jpg'],
+        series: 'razor backs',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'b-vinyl-drawing-4',
+      link: 'b-vinyl-drawing-4',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['b-vinyl-4.jpg'],
+        series: 'razor backs',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'b-vinyl-drawing-3',
+      link: 'b-vinyl-drawing-3',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['b-vinyl-3.jpg'],
+        series: 'razor backs',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'b-vinyl-drawing-2',
+      link: 'b-vinyl-drawing-2',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['b-vinyl-2.jpg'],
+        series: 'razor backs',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'b-vinyl-drawing-1',
+      link: 'b-vinyl-drawing-1',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['b-vinyl-1.jpg'],
+        series: 'razor backs',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'vinyl-drawing-2',
+      link: 'vinyl-drawing-2',
+      type: 'photo',
+      stuff: {
+        title: 'Vinyl Drawing #2',
+        imgSrc: ['vinyl-drawing-2.jpg'],
+        series: 'razor backs',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'vinyl-drawing-1',
+      link: 'vinyl-drawing-1',
+      type: 'photo',
+      stuff: {
+        title: 'Vinyl Drawing #1',
+        imgSrc: ['vinyl-drawing-1.jpg'],
+        series: 'razor backs',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'goat',
+      link: 'goat',
+      type: 'photo',
+      stuff: {
+        title: 'Goat',
+        imgSrc: ['goat.jpg'],
+        series: 'no series',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'extinction',
+      link: 'extinction',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['dino-9.jpg'],
+        series: 'foundation myths',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'sign',
+      link: 'sign',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['sign.jpg'],
+        series: 'freestylez',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'world-cup',
+      link: 'world-cup',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['world-cup.jpg'],
+        series: 'freestylez',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'telestrator-drawing-7',
+      link: 'telestrator-drawing-7',
+      type: 'photo',
+      stuff: {
+        title: 'Telestrator Drawing #7',
+        imgSrc: ['telestrator-drawing-7.jpg'],
+        series: 'razor backs',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'telestrator-drawing-6',
+      link: 'telestrator-drawing-6',
+      type: 'photo',
+      stuff: {
+        title: 'Telestrator Drawing #6',
+        imgSrc: ['telestrator-drawing-6.jpg'],
+        series: 'razor backs',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'telestrator-drawing-5',
+      link: 'telestrator-drawing-5',
+      type: 'photo',
+      stuff: {
+        title: 'Telestrator Drawing #5',
+        imgSrc: ['telestrator-drawing-5.jpg'],
+        series: 'razor backs',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'telestrator-drawing-4',
+      link: 'telestrator-drawing-4',
+      type: 'photo',
+      stuff: {
+        title: 'Telestrator Drawing #4',
+        imgSrc: ['telestrator-drawing-4.jpg'],
+        series: 'razor backs',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'telestrator-drawing-3',
+      link: 'telestrator-drawing-3',
+      type: 'photo',
+      stuff: {
+        title: 'Telestrator Drawing #3',
+        imgSrc: ['telestrator-drawing-3.jpg'],
+        series: 'razor backs',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'ice-surf',
+      link: 'ice-surf',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['ice-surf.jpg'],
+        series: 'freestylez',
+        date: '2018'
+      }
+    },
+    {
+      hiddenTitle: 'froth',
+      link: 'froth',
+      type: 'photo',
+      stuff: {
+        title: 'Untitled',
+        imgSrc: ['froth.jpg'],
+        series: 'freestylez',
+        date: '2018'
+      }
+    },
     {
       hiddenTitle: 'The End is Near',
       link: 'the-end-is-near',
@@ -44,7 +341,7 @@ export default {
       stuff: {
         title: 'Dossier #20',
         imgSrc: ['dossier-20.jpg'],
-        series: 'dossiers',
+        series: 'foundation myths',
         date: '2018'
       }
     },
@@ -55,7 +352,7 @@ export default {
       stuff: {
         title: 'Dossier #19',
         imgSrc: ['dossier-19.jpg'],
-        series: 'dossiers',
+        series: 'foundation myths',
         date: '2018'
       }
     },
@@ -66,7 +363,7 @@ export default {
       stuff: {
         title: 'Dossier #18',
         imgSrc: ['dossier-18.jpg'],
-        series: 'dossiers',
+        series: 'foundation myths',
         date: '2018'
       }
     },
@@ -77,7 +374,7 @@ export default {
       stuff: {
         title: 'Dossier #17',
         imgSrc: ['dossier-17.jpg'],
-        series: 'dossiers',
+        series: 'foundation myths',
         date: '2018'
       }
     },
@@ -88,7 +385,7 @@ export default {
       stuff: {
         title: 'Dossier #16',
         imgSrc: ['dossier-16.jpg'],
-        series: 'dossiers',
+        series: 'foundation myths',
         date: '2018'
       }
     },
@@ -99,7 +396,7 @@ export default {
       stuff: {
         title: 'Dossier #15',
         imgSrc: ['dossier-15.jpg'],
-        series: 'dossiers',
+        series: 'foundation myths',
         date: '2018'
       }
     },
@@ -110,7 +407,7 @@ export default {
       stuff: {
         title: 'Dossier #14',
         imgSrc: ['dossier-14.jpg'],
-        series: 'dossiers',
+        series: 'foundation myths',
         date: '2018'
       }
     },
@@ -121,7 +418,7 @@ export default {
       stuff: {
         title: 'Dossier #13',
         imgSrc: ['dossier-13.jpg'],
-        series: 'dossiers',
+        series: 'foundation myths',
         date: '2018'
       }
     },
@@ -187,7 +484,7 @@ export default {
       stuff: {
         title: 'Telestrator Drawing #2',
         imgSrc: ['telestrator-drawing-2.jpg'],
-        series: 'telestrator drawings',
+        series: 'razor backs',
         date: '2018'
       }
     },
@@ -198,7 +495,7 @@ export default {
       stuff: {
         title: 'Telestrator Drawing #1',
         imgSrc: ['telestrator-drawing-1.jpg'],
-        series: 'telestrator drawings',
+        series: 'razor backs',
         date: '2018'
       }
     },
@@ -452,7 +749,7 @@ export default {
       stuff: {
         title: 'Dossier #12',
         imgSrc: ['84_dossier-12.jpg'],
-        series: 'dossiers',
+        series: 'foundation myths',
         date: '2018'
       }
     },
@@ -463,7 +760,7 @@ export default {
       stuff: {
         title: 'Dossier #11',
         imgSrc: ['83_dossier-11.jpg'],
-        series: 'dossiers',
+        series: 'foundation myths',
         date: '2018'
       }
     },
@@ -474,7 +771,7 @@ export default {
       stuff: {
         title: 'Dossier #10',
         imgSrc: ['82_dossier-10.jpg'],
-        series: 'dossiers',
+        series: 'foundation myths',
         date: '2018'
       }
     },
@@ -485,7 +782,7 @@ export default {
       stuff: {
         title: 'Dossier #9',
         imgSrc: ['81_dossier-9.jpg'],
-        series: 'dossiers',
+        series: 'foundation myths',
         date: '2018'
       }
     },
@@ -496,7 +793,7 @@ export default {
       stuff: {
         title: 'Dossier #8',
         imgSrc: ['80_dossier-8.jpg'],
-        series: 'dossiers',
+        series: 'foundation myths',
         date: '2018'
       }
     },
@@ -507,7 +804,7 @@ export default {
       stuff: {
         title: 'Dossier #7',
         imgSrc: ['79_dossier-7.jpg'],
-        series: 'dossiers',
+        series: 'foundation myths',
         date: '2018'
       }
     },
@@ -518,7 +815,7 @@ export default {
       stuff: {
         title: 'Dossier #6',
         imgSrc: ['78_dossier-6.jpg'],
-        series: 'dossiers',
+        series: 'foundation myths',
         date: '2018'
       }
     },
@@ -529,7 +826,7 @@ export default {
       stuff: {
         title: 'Dossier #5',
         imgSrc: ['77_dossier-5.jpg'],
-        series: 'dossiers',
+        series: 'foundation myths',
         date: '2018'
       }
     },
@@ -540,7 +837,7 @@ export default {
       stuff: {
         title: 'Dossier #4',
         imgSrc: ['76_dossier-4.jpg'],
-        series: 'dossiers',
+        series: 'foundation myths',
         date: '2018'
       }
     },
@@ -551,7 +848,7 @@ export default {
       stuff: {
         title: 'Dossier #3',
         imgSrc: ['75_dossier-3.jpg'],
-        series: 'dossiers',
+        series: 'foundation myths',
         date: '2018'
       }
     },
@@ -562,7 +859,7 @@ export default {
       stuff: {
         title: 'Dossier #2',
         imgSrc: ['74_dossier-2.jpg'],
-        series: 'dossiers',
+        series: 'foundation myths',
         date: '2018'
       }
     },
@@ -573,7 +870,7 @@ export default {
       stuff: {
         title: 'Dossier #1',
         imgSrc: ['73_dossier-1.jpg'],
-        series: 'dossiers',
+        series: 'foundation myths',
         date: '2018'
       }
     },

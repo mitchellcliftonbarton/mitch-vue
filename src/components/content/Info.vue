@@ -1,17 +1,18 @@
 <template>
-  <div class="cv-container col-12 col-md-9 offset-md-3">
+  <div class="cv-container">
     <transition name="image-in" mode="out-in" appear>
       <div class="inner" key="info">
         <div class="personal-info">
           <p>{{ this.content.email }}</p>
           <p v-html="this.content.about"></p>
+          <p>View more web/design info <router-link to="/design-dev">here.</router-link></p>
           <p>
             <a :href="this.content.instagram" target="_blank">Instagram</a>
           </p>
         </div>
 
         <div class="education section">
-          <p>Education</p>
+          <p class="sec-title">Education</p>
           <p class="year">
             <span>{{ this.content.education.year }}</span>
             <span>{{ this.content.education.text }}</span>
@@ -19,7 +20,7 @@
         </div>
 
         <div class="solo section">
-          <p>Solo Exhibitions</p>
+          <p class="sec-title">Solo Exhibitions</p>
           <div v-for="(year, index) in this.content.solo" :key="index" class="year">
             <p class="year-text">{{ year.year }}</p>
             <div class="shows">
@@ -29,7 +30,7 @@
         </div>
 
         <div class="group section">
-          <p>Group Exhibitions</p>
+          <p class="sec-title">Group Exhibitions</p>
           <div v-for="(year, index) in this.content.group" :key="index" class="year">
             <p class="year-text">{{ year.year }}</p>
             <div class="shows">
@@ -39,7 +40,7 @@
         </div>
 
         <div class="online section">
-          <p>Online</p>
+          <p class="sec-title">Online</p>
           <div class="year">
             <div class="shows">
               <p v-for="(item, index) in this.content.online" :key="index" v-html="item.text"></p>
@@ -48,7 +49,7 @@
         </div>
 
         <div class="awards section">
-          <p>Awards</p>
+          <p class="sec-title">Awards</p>
           <div class="year">
             <div class="shows">
               <p v-for="(item, index) in this.content.awards" :key="index" v-html="item.text"></p>
@@ -57,7 +58,7 @@
         </div>
 
         <div class="publications section">
-          <p>Publications</p>
+          <p class="sec-title">Publications</p>
           <div class="year">
             <div class="shows">
               <p v-for="(item, index) in this.content.publications" :key="index" v-html="item.text"></p>
@@ -66,10 +67,19 @@
         </div>
 
         <div class="curatorial section">
-          <p>Curatorial</p>
+          <p class="sec-title">Curatorial</p>
           <div class="year">
             <div class="shows">
               <p v-for="(item, index) in this.content.curatorial" :key="index" v-html="item.text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="teaching section">
+          <p class="sec-title">Teaching</p>
+          <div class="year">
+            <div class="shows">
+              <p v-for="(item, index) in this.content.teaching" :key="index" v-html="item.text"></p>
             </div>
           </div>
         </div>
@@ -138,6 +148,12 @@ export default {
 
     .section {
       margin-top : 50px;
+
+      .sec-title {
+        .m & {
+          color: #efefef;
+        }
+      }
 
       & > p:first-child {
         font-weight: bold;

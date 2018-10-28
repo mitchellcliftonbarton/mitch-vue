@@ -30,6 +30,9 @@ export default {
       year: 2018,
       shows: [
         {
+          text: 'Self-Reflection, NIDA International Photography Symposium, Nida, Lithuania'
+        },
+        {
           text: 'Statewide Competition - Bountiful Davis Arts Center, Bountiful, UT - Curated by Adam Bateman'
         },
         {
@@ -51,6 +54,9 @@ export default {
         },
         {
           text: 'Alternative Facts - Humble Arts Foundation, <a target="_blank" href="http://hafny.org/group-show-52-alternative-facts">Online</a>'
+        },
+        {
+          text: 'Bee and the Bonnet BYU/MCLA collaboration, Gallery 303, Provo, UT'
         },
         {
           text: 'HUGE - Mestizo Gallery, Salt Lake City, UT'
@@ -103,6 +109,9 @@ export default {
   },
   online: [
     {
+      text: '<a href="https://thegallery.io/inspirations/2018/freestylez-battle" target="_blank">thegallery.io</a>'
+    },
+    {
       text: '<a href="https://anewnothing.com/mitchell-barton-eric-edvalson/" target="_blank">A New Nothing</a>'
     },
     {
@@ -118,7 +127,7 @@ export default {
       text: '<a href="http://brutalistwebsites.com/mitchellbarton.com/" target="_blank">Brutalist Websites</a>'
     },
     {
-      text: 'The Latent Image'
+      text: '<a href="https://www.facebook.com/TheLatentImage/photos/a.350731441614892.80858.344011632286873/1359825457372147/?type=3&theater" target="_blank">The Latent Image</a>'
     }
   ],
   awards: [
@@ -149,6 +158,14 @@ export default {
     },
     {
       text: '<a href="https://extra-point.com" target="_blank">Extra Point</a>'
+    },
+    {
+      text: '<a href="https://washer-dryer-projects.com" target="_blank">Washer / Dryer Projects</a>'
+    }
+  ],
+  teaching: [
+    {
+      text: 'Adjunct Professor, Department of Art, Brigham Young University'
     }
   ]
 }

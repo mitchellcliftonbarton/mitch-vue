@@ -6,6 +6,7 @@ import Home from '@/components/content/Home'
 import Info from '@/components/content/Info'
 import Project from '@/components/content/Project'
 import Index from '@/components/content/Index'
+import Design from '@/components/Design'
 import store from './../store'
 
 Vue.use(Router)
@@ -15,19 +16,23 @@ const router = new Router({
   routes: [
     {
       path: '/',
+      redirect: '/e'
+    },
+    {
+      path: '/e',
       component: MainContainer,
       children: [
         {
-          path: '/',
+          path: '/e',
           component: Home,
           name: 'home'
         },
         {
-          path: '/work/index',
+          path: '/e/work/index',
           component: Index
         },
         {
-          path: '/work/:piece',
+          path: '/e/work/:piece',
           component: Work,
           beforeEnter: (to, from, next) => {
             store.dispatch('setIndexView', true)
@@ -35,7 +40,7 @@ const router = new Router({
           }
         },
         {
-          path: '/project/:project',
+          path: '/e/project/:project',
           component: Project,
           beforeEnter: (to, from, next) => {
             store.dispatch('setIndexView', false)
@@ -43,9 +48,14 @@ const router = new Router({
           }
         },
         {
-          path: '/info',
+          path: '/e/info',
           name: 'info',
           component: Info
+        },
+        {
+          path: '/e/design-dev',
+          name: 'Design',
+          component: Design
         }
       ]
     }

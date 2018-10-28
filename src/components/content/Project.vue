@@ -1,5 +1,5 @@
 <template>
-  <div class="work-container col-12 col-md-9 offset-md-3">
+  <div class="work-container">
     <div class="inner pt-5">
       <div v-for="(piece, index) in this.theProject" class="row m-0" :key="index">
         <transition name="image-in" mode="out-in" appear>

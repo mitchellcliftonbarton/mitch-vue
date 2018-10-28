@@ -1,9 +1,9 @@
 <template>
   <div
-    class="work-container col-12 col-md-9 offset-md-3"
+    class="work-container"
   >
-    <div class="row image-sec">
-      <transition name="image-in" mode="out-in" appear>
+    <div class="row image-sec" :class="{ 'web-piece': this.thePiece.type === 'web' }">
+      <!-- <transition name="image-in" mode="out-in" appear> -->
         <ImageSec
           v-if="this.thePiece.type === 'photo'"
           class="m-0 pt-5 inner"
@@ -27,21 +27,29 @@
           class="inner m-0 pt-5"
           :key="this.thePiece.link"
         ></AudioSec>
-      </transition>
+
+        <component
+          v-else-if="this.thePiece.type === 'web'"
+          :piece="this.thePiece"
+          :key="this.thePiece.link"
+          :is="this.thePiece.stuff.component"
+        ></component>
+      <!-- </transition> -->
 
       <PieceInfo
+        v-if="this.thePiece.type !== 'web'"
         :piece="this.thePiece"
         :isPiece="this.isPiece"
       ></PieceInfo>
     </div>
 
-    <transition name="text-in" mode="out-in" appear>
+    <!-- <transition name="text-in" mode="out-in" appear> -->
       <PieceText
         v-if="this.thePiece.stuff.text"
         :piece="this.thePiece"
         :key="this.thePiece.stuff.text"
       ></PieceText>
-    </transition>
+    <!-- </transition> -->
 
     <LargeView
       v-if="zoomed"
@@ -59,6 +67,7 @@ import AudioSec from './media/AudioSec'
 import LargeView from './LargeView'
 import PieceInfo from './PieceInfo'
 import PieceText from './PieceText'
+import TwoWebsitesInOne from '@/components/web-pieces/TwoWebsitesInOne'
 
 export default {
   name: 'Work',
@@ -68,7 +77,8 @@ export default {
     LargeView,
     ImageSec,
     PieceInfo,
-    PieceText
+    PieceText,
+    TwoWebsitesInOne
   },
   data () {
     return {
@@ -88,14 +98,6 @@ export default {
       this.zoomed ? this.zoomed = false : this.zoomed = true
     }
   },
-  beforeRouteEnter (to, from, next) {
-    // alert('i would load data here')
-    next()
-  },
-  beforeRouteUpdate (to, from, next) {
-    // alert('i would load data here again')
-    next()
-  },
   beforeRouteLeave (to, from, next) {
     this.$store.dispatch('setIndexCrumb', false)
     next()
@@ -104,4 +106,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .row.web-piece {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
 </style>
